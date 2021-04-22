@@ -1,1332 +1,1332 @@
 /* ==UserStyle==
 @name		Smartschool Darkmode
 @description  	A smartschool theme
-@version     	0.0.2
+@version     	0.0.3
 @author       	Dario Busia
 @license      	MIT
-@preprocessor 	default
-@namespace      github.com/Aisu-glitch
+@preprocessor 	uso
+@namespace      https://github.com/Aisu-glitch
 @homepageURL   	https://github.com/Aisu-glitch/Smartschool-Darkmode
 @updateURL     	https://github.com/Aisu-glitch/Smartschool-Darkmode/raw/Master/Theme.user.css
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://sibbo.smartschool.be/") {
-body.go .smsc-topnav nav,
-body.modern-ui.go .smsc-topnav nav,
-.topnav__btn-wrapper > button,
-.input-search,
-.smsc-topnav .topnav__btn:hover,
-.js-course-filters.course-btnbar > label {
-	background-color: #333 !important;
-	color: #f40 !important;
-}
+	body.go .smsc-topnav nav,
+	body.modern-ui.go .smsc-topnav nav,
+	.topnav__btn-wrapper > button,
+	.input-search,
+	.smsc-topnav .topnav__btn:hover,
+	.js-course-filters.course-btnbar > label {
+		background-color: #333 !important;
+		color: #f40 !important;
+	}
 
-.smsc-topnav .topnav__btn.topnav__btn--icon.topnav__btn--icon--search {
-	background: url(https://sibbo.smartschool.be/smsc/svg/search_ic_white/search_ic_white_24x24.svg) !important;
-	background-repeat: no-repeat !important;
-	background-position: 50% 50% !important;
-}
+	.smsc-topnav .topnav__btn.topnav__btn--icon.topnav__btn--icon--search {
+		background: url(https://sibbo.smartschool.be/smsc/svg/search_ic_white/search_ic_white_24x24.svg) !important;
+		background-repeat: no-repeat !important;
+		background-position: 50% 50% !important;
+	}
 
-.smsc-topnav .topnav__btn.topnav__btn--icon.topnav__btn--icon--manual {
-	background: url(https://sibbo.smartschool.be/smsc/svg/help_ic_white/help_ic_white_24x24.svg) !important;
-	background-repeat: no-repeat !important;
-	background-position: 50% 50% !important;
-}
+	.smsc-topnav .topnav__btn.topnav__btn--icon.topnav__btn--icon--manual {
+		background: url(https://sibbo.smartschool.be/smsc/svg/help_ic_white/help_ic_white_24x24.svg) !important;
+		background-repeat: no-repeat !important;
+		background-position: 50% 50% !important;
+	}
 
-.smsc-topnav .topnav__btn.topnav__btn--icon.topnav__btn--icon--exit {
-	background: url(https://sibbo.smartschool.be/smsc/svg/exit_ic_white/exit_ic_white_24x24.svg) !important;
-	background-repeat: no-repeat !important;
-	background-position: 50% 50% !important;
-}
+	.smsc-topnav .topnav__btn.topnav__btn--icon.topnav__btn--icon--exit {
+		background: url(https://sibbo.smartschool.be/smsc/svg/exit_ic_white/exit_ic_white_24x24.svg) !important;
+		background-repeat: no-repeat !important;
+		background-position: 50% 50% !important;
+	}
 
-.smsc-topnav .topnav__btn.topnav__btn--icon.topnav__btn--icon--search:hover {
-	background: linear-gradient(0deg, rgba(153, 68, 0, 0.5) 0%, rgba(0, 0, 0, 0) 30%), url(https://sibbo.smartschool.be/smsc/svg/search_ic_white/search_ic_white_24x24.svg) !important;
-	background-repeat: no-repeat !important;
-	background-position: 50% 25% !important;
-}
+	.smsc-topnav .topnav__btn.topnav__btn--icon.topnav__btn--icon--search:hover {
+		background: linear-gradient(0deg, rgba(153, 68, 0, 0.5) 0%, rgba(0, 0, 0, 0) 30%), url(https://sibbo.smartschool.be/smsc/svg/search_ic_white/search_ic_white_24x24.svg) !important;
+		background-repeat: no-repeat !important;
+		background-position: 50% 25% !important;
+	}
 
-.smsc-topnav .topnav__btn.topnav__btn--icon.topnav__btn--icon--manual:hover {
-	background: linear-gradient(0deg, rgba(153, 68, 0, 0.5) 0%, rgba(0, 0, 0, 0) 30%), url(https://sibbo.smartschool.be/smsc/svg/help_ic_white/help_ic_white_24x24.svg) !important;
-	background-repeat: no-repeat !important;
-	background-position: 50% 25% !important;
-}
+	.smsc-topnav .topnav__btn.topnav__btn--icon.topnav__btn--icon--manual:hover {
+		background: linear-gradient(0deg, rgba(153, 68, 0, 0.5) 0%, rgba(0, 0, 0, 0) 30%), url(https://sibbo.smartschool.be/smsc/svg/help_ic_white/help_ic_white_24x24.svg) !important;
+		background-repeat: no-repeat !important;
+		background-position: 50% 25% !important;
+	}
 
-.smsc-topnav .topnav__btn.topnav__btn--icon.topnav__btn--icon--exit:hover {
-	background: linear-gradient(0deg, rgba(153, 68, 0, 0.5) 0%, rgba(0, 0, 0, 0) 30%), url(https://sibbo.smartschool.be/smsc/svg/exit_ic_white/exit_ic_white_24x24.svg) !important;
-	background-repeat: no-repeat !important;
-	background-position: 50% 25% !important;
-}
+	.smsc-topnav .topnav__btn.topnav__btn--icon.topnav__btn--icon--exit:hover {
+		background: linear-gradient(0deg, rgba(153, 68, 0, 0.5) 0%, rgba(0, 0, 0, 0) 30%), url(https://sibbo.smartschool.be/smsc/svg/exit_ic_white/exit_ic_white_24x24.svg) !important;
+		background-repeat: no-repeat !important;
+		background-position: 50% 25% !important;
+	}
 
-.course-ico.course-ico--own {
-	border: none !important;
-}
+	.course-ico.course-ico--own {
+		border: none !important;
+	}
 
-.topnav {
-	border-bottom: 1px solid #940 !important;
-}
+	.topnav {
+		border-bottom: 1px solid #940 !important;
+	}
 
-.modern-ui .smscButton {
-	text-decoration: none;
-}
+	.modern-ui .smscButton {
+		text-decoration: none;
+	}
 
-.input-search,
-.js-course-filters.course-btnbar {
-	background-color: #333 !important;
-	border: 1px solid #940 !important;
-}
+	.input-search,
+	.js-course-filters.course-btnbar {
+		background-color: #333 !important;
+		border: 1px solid #940 !important;
+	}
 
-.smsc-topnav .topnav__badge,
-.notification:hover,
-.modern-ui .smscButton:hover,
-.smsc-topnav :not(.topnav__menuitem--no-hover).topnav__menuitem:hover {
-	background-color: #666 !important;
-	border-color: #f40 !important;
-	color: #f40;
-}
+	.smsc-topnav .topnav__badge,
+	.notification:hover,
+	.modern-ui .smscButton:hover,
+	.smsc-topnav :not(.topnav__menuitem--no-hover).topnav__menuitem:hover {
+		background-color: #666 !important;
+		border-color: #f40 !important;
+		color: #f40;
+	}
 
-.smsc-topnav .topnav__btn:hover {
-	padding-bottom: 13px !important;
-	line-height: 35px !important;
-}
-.js-btn-messages.topnav__btn,
-.js-btn-home.topnav__btn.topnav__btn--push-right {
-	background-color: #333 !important;
-	color: #f40;
-}
+	.smsc-topnav .topnav__btn:hover {
+		padding-bottom: 13px !important;
+		line-height: 35px !important;
+	}
+	.js-btn-messages.topnav__btn,
+	.js-btn-home.topnav__btn.topnav__btn--push-right {
+		background-color: #333 !important;
+		color: #f40;
+	}
 
-.topnav__menu-arrow::before,
-.topnav__menu-arrow::after {
-	border-color: #940 transparent !important;
-}
+	.topnav__menu-arrow::before,
+	.topnav__menu-arrow::after {
+		border-color: #940 transparent !important;
+	}
 
-.js-notif-close {
-	border-radius: 20px !important;
-	background-color: #333;
-}
+	.js-notif-close {
+		border-radius: 20px !important;
+		background-color: #333;
+	}
 
-.close-icon {
-	padding-right: 2px;
-	padding-bottom: 1px;
-}
+	.close-icon {
+		padding-right: 2px;
+		padding-bottom: 1px;
+	}
 
-.notification:hover .js-notif-close .close-icon {
-	padding-right: 4px;
-	padding-bottom: 3px;
-}
+	.notification:hover .js-notif-close .close-icon {
+		padding-right: 4px;
+		padding-bottom: 3px;
+	}
 
-.notification__content {
-	overflow-x: hidden;
-}
+	.notification__content {
+		overflow-x: hidden;
+	}
 
-.notification__btn {
-	max-width: 561.417px !important;
-}
+	.notification__btn {
+		max-width: 561.417px !important;
+	}
 
-.notification:hover .js-notif-close {
-	border: 1px solid #940;
-}
+	.notification:hover .js-notif-close {
+		border: 1px solid #940;
+	}
 
-.menu-divider::before,
-.title--3::after {
-	background: #666 !important;
-}
+	.menu-divider::before,
+	.title--3::after {
+		background: #666 !important;
+	}
 
-.smsc-topnav .topnav__badge {
-	border-color: #F40!important;
-}
+	.smsc-topnav .topnav__badge {
+		border-color: #F40!important;
+	}
 
-.smsc-topnav [data-notifs] .notifs__hdr [role="switch"] {
-	border: 1px solid #940 !important;
-	background-color: #666 !important;
-}
+	.smsc-topnav [data-notifs] .notifs__hdr [role="switch"] {
+		border: 1px solid #940 !important;
+		background-color: #666 !important;
+	}
 
-[role="switch"][aria-checked="false"] :first-child,
-[role="switch"][aria-checked="true"] :last-child {
-	background: #333 !important;
-	color: #940 !important;
-}
+	[role="switch"][aria-checked="false"] :first-child,
+	[role="switch"][aria-checked="true"] :last-child {
+		background: #333 !important;
+		color: #940 !important;
+	}
 
-[role="switch"][aria-checked="false"] :last-child,
-[role="switch"][aria-checked="true"] :first-child {
-	color: #333 !important;
-	background-color: #940 !important;
-}
+	[role="switch"][aria-checked="false"] :last-child,
+	[role="switch"][aria-checked="true"] :first-child {
+		color: #333 !important;
+		background-color: #940 !important;
+	}
 
-.smsc-topnav .topnav__btn {
-	background: none !important;
-	transition: background-position 350ms, padding-bottom 350ms, line-height 350ms !important;
-	background: linear-gradient(0deg, rgba(153, 68, 0, 0.5) 0%, rgba(0, 0, 0, 0) 30%) !important;
-	background-position: 0px 10px !important;
-	background-repeat: no-repeat !important;
-}
+	.smsc-topnav .topnav__btn {
+		background: none !important;
+		transition: background-position 350ms, padding-bottom 350ms, line-height 350ms !important;
+		background: linear-gradient(0deg, rgba(153, 68, 0, 0.5) 0%, rgba(0, 0, 0, 0) 30%) !important;
+		background-position: 0px 10px !important;
+		background-repeat: no-repeat !important;
+	}
 
-.topnav__btn:hover {
-	border-bottom: none !important;
-	background-position: 0px 0px !important;
-}
+	.topnav__btn:hover {
+		border-bottom: none !important;
+		background-position: 0px 0px !important;
+	}
 
-.notification__content > span,
-.topnav__menuitem,
-#topnavCoursesTitle {
-	color: #fff !important;
-}
+	.notification__content > span,
+	.topnav__menuitem,
+	#topnavCoursesTitle {
+		color: #fff !important;
+	}
 
-.notifs__hdr,
-.notification {
-	border-color: #666 !important;
-}
+	.notifs__hdr,
+	.notification {
+		border-color: #666 !important;
+	}
 
-.smsc-topnav .topnav__menuitem > span {
-	color: #fff !important;
-}
+	.smsc-topnav .topnav__menuitem > span {
+		color: #fff !important;
+	}
 
-.smsc-topnav .topnav__menuitem {
-	border: 1px solid #940;
-	margin-bottom: 3px;
-	padding-left: 50px;
-	background-position-x: 12px;
-}
+	.smsc-topnav .topnav__menuitem {
+		border: 1px solid #940;
+		margin-bottom: 3px;
+		padding-left: 50px;
+		background-position-x: 12px;
+	}
 
-.input-search:focus {
-	box-shadow: none !important;
-}
+	.input-search:focus {
+		box-shadow: none !important;
+	}
 
-.smsc-topnav .topnav__menu {
-	background-color: #222;
-	border-color: #940
-}
+	.smsc-topnav .topnav__menu {
+		background-color: #222;
+		border-color: #940
+	}
 
-#notificationToaster {
-	background-color: #0000;
-	color: #fff;
-}
+	#notificationToaster {
+		background-color: #0000;
+		color: #fff;
+	}
 
-.notifs-toaster__toast {
-	border-color: #940;
-}
+	.notifs-toaster__toast {
+		border-color: #940;
+	}
 
-#notificationToaster *,
-.smsc-topnav .topnav__btn *,
-.topnav__btn-wrapper {
-	background-color: #333 !important;
-}
-/*------------------------------------------------------------------------------------*/
-.go {
-	background-color: #222;
-}
+	#notificationToaster *,
+	.smsc-topnav .topnav__btn *,
+	.topnav__btn-wrapper {
+		background-color: #333 !important;
+	}
+	/*------------------------------------------------------------------------------------*/
+	.go {
+		background-color: #222;
+	}
 }
 
 @-moz-document url("https://sibbo.smartschool.be/login") {
-.go .login-app__platform-indicator {
-	background: none !important;
-}
+	.go .login-app__platform-indicator {
+		background: none !important;
+	}
 
-#smartschoolAppLinkWebsitem,
-.modern-ui .float-label__input + label > span {
-	color: #fff;
-}
+	#smartschoolAppLinkWebsitem,
+	.modern-ui .float-label__input + label > span {
+		color: #fff;
+	}
 
-.login-app__left {
-	display: none;
-}
+	.login-app__left {
+		display: none;
+	}
 
-.login-app__container {
-	background-color: #2229;
-	justify-content: center !important;
-}
+	.login-app__container {
+		background-color: #2229;
+		justify-content: center !important;
+	}
 
-.login-app {
-	background-image: url(https://vjloopsfarm.com/wp-content/uploads/2019/05/Red-Keter-sequence-patterns.-4k.-Abstract-multicolored-motion-graphics-background.-VJ-Loop-LIMEART_003.jpg);
-	background-size: cover;
-	background-position: center;
-}
+	.login-app {
+		background-image: url(https://vjloopsfarm.com/wp-content/uploads/2019/05/Red-Keter-sequence-patterns.-4k.-Abstract-multicolored-motion-graphics-background.-VJ-Loop-LIMEART_003.jpg);
+		background-size: cover;
+		background-position: center;
+	}
 
-.login-app__right {
-	display: normal;
-	background-color: #222222ef;
-	box-shadow: 0 0 1000px 0 #222 !important;
-	border-left: 2px solid #f40;
-	border-right: 2px solid #f40;
-	width: 100% !important;
-}
+	.login-app__right {
+		display: normal;
+		background-color: #222222ef;
+		box-shadow: 0 0 1000px 0 #222 !important;
+		border-left: 2px solid #f40;
+		border-right: 2px solid #f40;
+		width: 100% !important;
+	}
 
-.login-app__school-logo {
-	background-image: url(https://sibbo.smartschool.be/smsc/svg/logo_smartschool/logo_smartschool_16x16.svg) !important;
-}
+	.login-app__school-logo {
+		background-image: url(https://sibbo.smartschool.be/smsc/svg/logo_smartschool/logo_smartschool_16x16.svg) !important;
+	}
 
-.login-app__smartschool-app {
-	display: none;
-}
+	.login-app__smartschool-app {
+		display: none;
+	}
 
-#login_form__username,
-#login_form__password,
-.modern-ui .smscButton.blue {
-	background-color: #333;
-	color: #fff;
-	autocomplete: false;
-}
+	#login_form__username,
+	#login_form__password,
+	.modern-ui .smscButton.blue {
+		background-color: #333;
+		color: #fff;
+		autocomplete: false;
+	}
 
-.modern-ui .smscButton.blue:hover:not([disabled]) {
-	background-color: #666;
-	color: #fff;
-}
+	.modern-ui .smscButton.blue:hover:not([disabled]) {
+		background-color: #666;
+		color: #fff;
+	}
 
-.modern-ui .smscButton.blue,
-.modern-ui .smscButton.blue:hover:not([disabled]) {
-	border-color: #f40;
-	margin-bottom: 0px !important;
-}
+	.modern-ui .smscButton.blue,
+	.modern-ui .smscButton.blue:hover:not([disabled]) {
+		border-color: #f40;
+		margin-bottom: 0px !important;
+	}
 
-.login-app__right {
-	justify-content: center;
-}
+	.login-app__right {
+		justify-content: center;
+	}
 
-.login-app__form {
-	margin-bottom: none !important;
-}
+	.login-app__form {
+		margin-bottom: none !important;
+	}
 
-.login-app__platform-indicator {
-	display: none;
-}
+	.login-app__platform-indicator {
+		display: none;
+	}
 }
 
 @-moz-document url("https://sibbo.smartschool.be/") {
-.datepicker__cell.datepicker--current-day .datepicker__cell__content,
-.datepicker__cell,
-body.modern-ui .homepage #homepage__block--news .news__feed__button__content--name-date,
-body.modern-ui .homepage .course__list .course__block__description,
-legend {
-	color: #fff !important;
-}
+	.datepicker__cell.datepicker--current-day .datepicker__cell__content,
+	.datepicker__cell,
+	body.modern-ui .homepage #homepage__block--news .news__feed__button__content--name-date,
+	body.modern-ui .homepage .course__list .course__block__description,
+	legend {
+		color: #fff !important;
+	}
 
-body.modern-ui .smscMain .smsc-container--left,
-.course__list {
-	overflow-y: scroll;
-	-ms-overflow-style: none;
-	scrollbar-width: none;
-}
+	body.modern-ui .smscMain .smsc-container--left,
+	.course__list {
+		overflow-y: scroll;
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
 
-.smsc-topnav [data-notifs] .notification:hover {
-	background: #333;
-}
+	.smsc-topnav [data-notifs] .notification:hover {
+		background: #333;
+	}
 
-.datepicker--other-month-day {
-	color: #666 !important;
-}
+	.datepicker--other-month-day {
+		color: #666 !important;
+	}
 
-#smscMain {
-	background-color: #222;
-	color: #666 !important;
-}
+	#smscMain {
+		background-color: #222;
+		color: #666 !important;
+	}
 
-body.modern-ui .homepage__block:not(:last-child),
-.datepicker__cell.datepicker--current-day .datepicker__cell__content {
-	border-color: #940 !important;
-}
+	body.modern-ui .homepage__block:not(:last-child),
+	.datepicker__cell.datepicker--current-day .datepicker__cell__content {
+		border-color: #940 !important;
+	}
 
-.smsc-title--1 {
-	color: #f40 !important;
-}
+	.smsc-title--1 {
+		color: #f40 !important;
+	}
 
-.course__block__title,
-.news__feed__button__content--title,
-.datepicker--bold {
-	color: #940;
-}
+	.course__block__title,
+	.news__feed__button__content--title,
+	.datepicker--bold {
+		color: #940;
+	}
 
-#intradesk74auWLB7IRzJqo2Oz5HolcGrw,
-#intradeskk41ztU7ckLXPqltAxys2cht5g,
-a,
-a:hover {
-	color: #fff;
-	text-decoration: underline;
-}
+	#intradesk74auWLB7IRzJqo2Oz5HolcGrw,
+	#intradeskk41ztU7ckLXPqltAxys2cht5g,
+	a,
+	a:hover {
+		color: #fff;
+		text-decoration: underline;
+	}
 
-.smsc-contextmenu .menu-linkbutton {
-	color: #fff;
-	text-decoration: none;
-	background-position-x: 5px;
-	padding-left: 50px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	width: 100%;
-}
+	.smsc-contextmenu .menu-linkbutton {
+		color: #fff;
+		text-decoration: none;
+		background-position-x: 5px;
+		padding-left: 50px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		width: 100%;
+	}
 
-.smsc-contextmenu .menu-linkbutton:hover {
-	background-position-x: 4px;
-	padding-left: 49px;
-	padding-top: 4px;
-	padding-bottom: 4px;
-	border-radius: 5px;
-	border: 1px solid #940;
-}
+	.smsc-contextmenu .menu-linkbutton:hover {
+		background-position-x: 4px;
+		padding-left: 49px;
+		padding-top: 4px;
+		padding-bottom: 4px;
+		border-radius: 5px;
+		border: 1px solid #940;
+	}
 
-.smsc-contextmenu .menu-linkbutton:not(:last-child) {
-	margin-bottom: 5px;
-}
+	.smsc-contextmenu .menu-linkbutton:not(:last-child) {
+		margin-bottom: 5px;
+	}
 
-#homeAgenda .datepicker__cell__content:not(.datepicker--bold):hover,
-body.modern-ui .homepage .course__list .course__image:hover {
-	background-color: #333 !important;
-	background-repeat: no-repeat;
-	border-color: #f40 !important;
-	color: #f40;
-}
+	#homeAgenda .datepicker__cell__content:not(.datepicker--bold):hover,
+	body.modern-ui .homepage .course__list .course__image:hover {
+		background-color: #333 !important;
+		background-repeat: no-repeat;
+		border-color: #f40 !important;
+		color: #f40;
+	}
 
-#googleQuery,
-.smscButton,
-.grey,
-#bibnetQuery,
-#courseSearch {
-	background-color: #333 !important;
-	color: #fff !important;
-	border-color: #940 !important;
-	box-shadow: none;
-}
+	#googleQuery,
+	.smscButton,
+	.grey,
+	#bibnetQuery,
+	#courseSearch {
+		background-color: #333 !important;
+		color: #fff !important;
+		border-color: #940 !important;
+		box-shadow: none;
+	}
 
-.smsc-topnav .topnav__menu {
-	background-color: #222;
-	border-color: #940;
-}
+	.smsc-topnav .topnav__menu {
+		background-color: #222;
+		border-color: #940;
+	}
 
-.topnav__menuitem.topnav__menuitem--img,
-.topnav__menuitem.topnav__menuitem--icon.topnav__menuitem--icon--notifs,
-.news__feed:hover {
-	background-color: #333 !important;
-	border-radius: 5px !important;
-	border: 1px solid #940 !important;
-}
+	.topnav__menuitem.topnav__menuitem--img,
+	.topnav__menuitem.topnav__menuitem--icon.topnav__menuitem--icon--notifs,
+	.news__feed:hover {
+		background-color: #333 !important;
+		border-radius: 5px !important;
+		border: 1px solid #940 !important;
+	}
 
-.news__feed:hover {
-	border-color: #f40 !important;
-	margin-bottom: 13.996px !important;
-}
+	.news__feed:hover {
+		border-color: #f40 !important;
+		margin-bottom: 13.996px !important;
+	}
 
-.news__feed:hover .news__feed__button {
-	background-position-x: 4px !important;
-	background-position-y: 6px !important;
-}
+	.news__feed:hover .news__feed__button {
+		background-position-x: 4px !important;
+		background-position-y: 6px !important;
+	}
 
-.topnav__menuitem.topnav__menuitem--img {
-	padding-left: 10px;
-}
+	.topnav__menuitem.topnav__menuitem--img {
+		padding-left: 10px;
+	}
 
-.topnav__menuitem.topnav__menuitem--icon.topnav__menuitem--icon--notifs {
-	background-position-x: 10px;
-	padding-left: 50px !important;
-}
+	.topnav__menuitem.topnav__menuitem--icon.topnav__menuitem--icon--notifs {
+		background-position-x: 10px;
+		padding-left: 50px !important;
+	}
 
-#centercontainer {
-	border-color: #940 !important;
-}
+	#centercontainer {
+		border-color: #940 !important;
+	}
 
-.smsc-contextmenu-arrow::after,
-.smsc-contextmenu-arrow::before {
-	border-color: #940 transparent !important;
-}
+	.smsc-contextmenu-arrow::after,
+	.smsc-contextmenu-arrow::before {
+		border-color: #940 transparent !important;
+	}
 
-.topnav__menu-arrow {
-	top: 37px !important;
-}
+	.topnav__menu-arrow {
+		top: 37px !important;
+	}
 
-.smsc-contextmenu-bubble {
-	background-color: #333 !important;
-	border-color: #940 !important;
-}
+	.smsc-contextmenu-bubble {
+		background-color: #333 !important;
+		border-color: #940 !important;
+	}
 
-.news__feed__button {
-	transition: background 150ms;
-	width: 100%;
-}
+	.news__feed__button {
+		transition: background 150ms;
+		width: 100%;
+	}
 
-.ui-widget-content,.ui-dialog, .ui-dialog-titlebar {
-	background-color: #333;
-	border-color: #666 !important;
-}
+	.ui-widget-content,.ui-dialog, .ui-dialog-titlebar {
+		background-color: #333;
+		border-color: #666 !important;
+	}
 
-.ui-dialog-titlebar{
-	border: none;
-}
+	.ui-dialog-titlebar{
+		border: none;
+	}
 
-.newsDialog__center{
-	color: #FFF;
-}
+	.newsDialog__center{
+		color: #FFF;
+	}
 }
 
 @-moz-document url-prefix("https://sibbo.smartschool.be/conference/") {
-:root {
-	--color-success: #00957c !important;
-	--color-black: #940 !important;
-	--color-primary: #940 !important;
-	--user-list-bg: #222 !important;
-	--item-focus-border: #666 !important;
-	--color-white: #222 !important;
-}
+	:root {
+		--color-success: #00957c !important;
+		--color-black: #940 !important;
+		--color-primary: #940 !important;
+		--user-list-bg: #222 !important;
+		--item-focus-border: #666 !important;
+		--color-white: #222 !important;
+	}
 
-#smscMain {
-	background-color: #222 !important;
-	padding-top: 12px;
-}
+	#smscMain {
+		background-color: #222 !important;
+		padding-top: 12px;
+	}
 
-#smscMain * {
-	border: none;
-}
+	#smscMain * {
+		border: none;
+	}
 
-#smscleftnav {
-	top: 56px !important;
-}
+	#smscleftnav {
+		top: 56px !important;
+	}
 
-.smscleftnavcontainer {
-	background-color: #333 !important;
-	box-shadow: none !important;
-	border: 1px solid #666 !important;
-}
+	.smscleftnavcontainer {
+		background-color: #333 !important;
+		box-shadow: none !important;
+		border: 1px solid #666 !important;
+	}
 
-.smsc-column-nav__button {
-	color: #fff !important;
-}
+	.smsc-column-nav__button {
+		color: #fff !important;
+	}
 
-.smsc-column-nav__button:hover {
-	border-radius: 5px;
-	border-collapse: separate;
-	background-color: #666 !important;
-	border: 1px solid #940 !important;
-}
+	.smsc-column-nav__button:hover {
+		border-radius: 5px;
+		border-collapse: separate;
+		background-color: #666 !important;
+		border: 1px solid #940 !important;
+	}
 
-.live__page {
-	background-color: #333 !important;
-	box-shadow: none !important;
-	border: 1px solid #666 !important;
-}
+	.live__page {
+		background-color: #333 !important;
+		box-shadow: none !important;
+		border: 1px solid #666 !important;
+	}
 
-.live__page * {
-	color: #fff;
-}
+	.live__page * {
+		color: #fff;
+	}
 
-.live__quick-nav,
-.media--qsqlj,
-.userList--Z2q1D0p,
-.scrollableList--Z2s6Her,
-.active--Z1SuO2X,
-.messageList--hsNac {
-	background: #222 !important;
-	border-color: #666 !important;
-}
+	.live__quick-nav,
+	.media--qsqlj,
+	.userList--Z2q1D0p,
+	.scrollableList--Z2s6Her,
+	.active--Z1SuO2X,
+	.messageList--hsNac {
+		background: #222 !important;
+		border-color: #666 !important;
+	}
 
-.live__btn,
-.smallTitle--2wz4kP,
-.systemMessage--ZYspJQ,
-.input--2wilPX {
-	color: #fff !important;
-}
+	.live__btn,
+	.smallTitle--2wz4kP,
+	.systemMessage--ZYspJQ,
+	.input--2wilPX {
+		color: #fff !important;
+	}
 
-.systemMessage--ZYspJQ,
-.input--2wilPX {
-	background: #333 !important;
-	border-color: #666 !important;
-}
+	.systemMessage--ZYspJQ,
+	.input--2wilPX {
+		background: #333 !important;
+		border-color: #666 !important;
+	}
 
-.userlistPad--o5KDX {
-	background: #666 !important;
-}
+	.userlistPad--o5KDX {
+		background: #666 !important;
+	}
 }
 
 @-moz-document url-prefix("https://sibbo.smartschool.be/index.php?module=News"), url-prefix("https://sibbo.smartschool.be/Documents/"), url-prefix("https://sibbo.smartschool.be/Weblinks/"), url-prefix("https://sibbo.smartschool.be/Tasks/"), url-prefix("https://sibbo.smartschool.be/index.php?module=Exercises"), url-prefix("https://sibbo.smartschool.be/Classmates/") {
-#smscMain {
-	background-color: #222 !important;
-	padding-top: 12px;
-}
+	#smscMain {
+		background-color: #222 !important;
+		padding-top: 12px;
+	}
 
-#smscMain * {
-	border: none;
-}
+	#smscMain * {
+		border: none;
+	}
 
-.smscleftnavcontainer {
-	background-color: #333 !important;
-	box-shadow: none !important;
-	border: 1px solid #666 !important;
-}
+	.smscleftnavcontainer {
+		background-color: #333 !important;
+		box-shadow: none !important;
+		border: 1px solid #666 !important;
+	}
 
-.smsc-column-nav__button {
-	color: #fff !important;
-}
+	.smsc-column-nav__button {
+		color: #fff !important;
+	}
 
-.smsc-column-nav__button:hover {
-	border-radius: 5px;
-	border-collapse: separate;
-	background-color: #666 !important;
-	border: 1px solid #940 !important;
-}
+	.smsc-column-nav__button:hover {
+		border-radius: 5px;
+		border-collapse: separate;
+		background-color: #666 !important;
+		border: 1px solid #940 !important;
+	}
 
-.margin-top--milli * {
-	background: none;
-	background-repeat: no-repeat;
-	background-position: 5px center;
-	color: #fff;
-}
+	.margin-top--milli * {
+		background: none;
+		background-repeat: no-repeat;
+		background-position: 5px center;
+		color: #fff;
+	}
 
-.margin-top--milli {
-	background: #333;
-	border-radius: 15px !important;
-	border: 1px solid #666 !important;
-	border-collapse: separate;
-}
+	.margin-top--milli {
+		background: #333;
+		border-radius: 15px !important;
+		border: 1px solid #666 !important;
+		border-collapse: separate;
+	}
 
-.breadcrumb_url a {
-	color: #fff;
-}
+	.breadcrumb_url a {
+		color: #fff;
+	}
 
-.smsc_cm_body_row:hover {
-	background-color: #666;
-	border-radius: 5px;
-	border-collapse: separate;
-	border: 1px solid #940 !important;
-}
+	.smsc_cm_body_row:hover {
+		background-color: #666;
+		border-radius: 5px;
+		border-collapse: separate;
+		border: 1px solid #940 !important;
+	}
 
-.smsc_cm_link:hover {
-	text-decoration: none !important;
-	color: #fff;
-}
+	.smsc_cm_link:hover {
+		text-decoration: none !important;
+		color: #fff;
+	}
 
-.smscFrameTitle {
-	background: #666 !important;
-	color: #fff !important;
-	box-shadow: none !important;
-}
+	.smscFrameTitle {
+		background: #666 !important;
+		color: #fff !important;
+		box-shadow: none !important;
+	}
 
-.smsc-linkbutton,
-.smsc-download__icon--download {
-	background-position: 0px center;
-	background-image: url("https://static1.smart-school.net/smsc/svg/arrow_download_green_ic_action/arrow_download_green_ic_action_16x16.svg") !important;
-}
+	.smsc-linkbutton,
+	.smsc-download__icon--download {
+		background-position: 0px center;
+		background-image: url("https://static1.smart-school.net/smsc/svg/arrow_download_green_ic_action/arrow_download_green_ic_action_16x16.svg") !important;
+	}
 }
 
 @-moz-document url-prefix("https://sibbo.smartschool.be/index.php?module=Uploadzone") {
-#smscMain {
-	background-color: #222 !important;
-	padding-top: 12px;
-}
+	#smscMain {
+		background-color: #222 !important;
+		padding-top: 12px;
+	}
 
-#smscMain * {
-	border: none !important;
-}
+	#smscMain * {
+		border: none !important;
+	}
 
-.smscleftnavcontainer {
-	background-color: #333 !important;
-	border: 1px solid #666 !important;
-	box-shadow: none !important;
-}
+	.smscleftnavcontainer {
+		background-color: #333 !important;
+		border: 1px solid #666 !important;
+		box-shadow: none !important;
+	}
 
-.smsc-column-nav__button {
-	color: #fff !important;
-}
+	.smsc-column-nav__button {
+		color: #fff !important;
+	}
 
-.smsc-column-nav__button:hover {
-	background-color: #666 !important;
-	border: 1px solid #940 !important;
-}
+	.smsc-column-nav__button:hover {
+		background-color: #666 !important;
+		border: 1px solid #940 !important;
+	}
 
-#uploadzone * {
-	background: none;
-	color: #fff !important;
-}
+	#uploadzone * {
+		background: none;
+		color: #fff !important;
+	}
 
-#uploadzone > tbody > tr > td > table {
-	border-collapse: separate !important;
-	background: #333 !important;
-	border-radius: 15px !important;
-	border: 1px solid #666 !important;
-}
+	#uploadzone > tbody > tr > td > table {
+		border-collapse: separate !important;
+		background: #333 !important;
+		border-radius: 15px !important;
+		border: 1px solid #666 !important;
+	}
 
-#toolbar {
-	border-top-left-radius: 15px !important;
-	border-bottom-left-radius: 15px !important;
-	border: 1px solid #666 !important;
-	margin-right: 2px !important;
-	background: #333 !important;
-}
+	#toolbar {
+		border-top-left-radius: 15px !important;
+		border-bottom-left-radius: 15px !important;
+		border: 1px solid #666 !important;
+		margin-right: 2px !important;
+		background: #333 !important;
+	}
 
-.tree-classic ul {
-	background-position: 6px 1px !important;
-	background-repeat: repeat-y !important;
-	background-image: url(data:image/gif;base64,R0lGODlhAgACAIAAAB4dGf///yH5BAEAAAEALAAAAAACAAIAAAICRF4AOw==) !important;
-}
+	.tree-classic ul {
+		background-position: 6px 1px !important;
+		background-repeat: repeat-y !important;
+		background-image: url(data:image/gif;base64,R0lGODlhAgACAIAAAB4dGf///yH5BAEAAAEALAAAAAACAAIAAAICRF4AOw==) !important;
+	}
 
-.tree-classic li.open {
-	background: url(https://sibbo.smartschool.be/includes/jQuery/plugins/jsTree/themes/classic/icons.png) -32px -48px no-repeat !important;
-}
+	.tree-classic li.open {
+		background: url(https://sibbo.smartschool.be/includes/jQuery/plugins/jsTree/themes/classic/icons.png) -32px -48px no-repeat !important;
+	}
 
-.tree-classic li.closed {
-	background: url(https://sibbo.smartschool.be/includes/jQuery/plugins/jsTree/themes/classic/icons.png) -48px -32px no-repeat !important;
-}
+	.tree-classic li.closed {
+		background: url(https://sibbo.smartschool.be/includes/jQuery/plugins/jsTree/themes/classic/icons.png) -48px -32px no-repeat !important;
+	}
 
-.tree-classic li {
-	background-position: -64px -16px !important;
-	background-repeat: no-repeat !important;
-	background-image: url(https://sibbo.smartschool.be/includes/jQuery/plugins/jsTree/themes/classic/icons.png) !important;
-}
+	.tree-classic li {
+		background-position: -64px -16px !important;
+		background-repeat: no-repeat !important;
+		background-image: url(https://sibbo.smartschool.be/includes/jQuery/plugins/jsTree/themes/classic/icons.png) !important;
+	}
 
-.toolbar .resize-handle {
-	background-image: url(https://sibbo.smartschool.be/themes/default/images/toolbar/tbarsplit.png) !important;
-}
+	.toolbar .resize-handle {
+		background-image: url(https://sibbo.smartschool.be/themes/default/images/toolbar/tbarsplit.png) !important;
+	}
 
-.toolbar .new-file .icon {
-	background-image: url(https://sibbo.smartschool.be/smsc/img/add2/add2_24x24.png) !important;
-}
+	.toolbar .new-file .icon {
+		background-image: url(https://sibbo.smartschool.be/smsc/img/add2/add2_24x24.png) !important;
+	}
 
-.toolbar .new-file .icon,
-.toolbar .resize-handle {
-	background-repeat: no-repeat !important;
-	background-position: center center !important;
-}
+	.toolbar .new-file .icon,
+	.toolbar .resize-handle {
+		background-repeat: no-repeat !important;
+		background-position: center center !important;
+	}
 
-.smscFrameTitle {
-	background-color: #666 !important;
-	box-shadow: none !important;
-}
+	.smscFrameTitle {
+		background-color: #666 !important;
+		box-shadow: none !important;
+	}
 
-.fileuploadblock,
-.fileinfogrey,
-.correctioninfo {
-	background-color: #666 !important;
-	border-radius: 8px;
-}
+	.fileuploadblock,
+	.fileinfogrey,
+	.correctioninfo {
+		background-color: #666 !important;
+		border-radius: 8px;
+	}
 
-.correctionline {
-	background-color: #555 !important;
-}
+	.correctionline {
+		background-color: #555 !important;
+	}
 
-#formval_omschrijving {
-	background-color: #333 !important;
-}
+	#formval_omschrijving {
+		background-color: #333 !important;
+	}
 
-.smscButton.blue {
-	background-color: #333 !important;
-}
+	.smscButton.blue {
+		background-color: #333 !important;
+	}
 
-.smscButton:hover {
-	border: 1px solid #940 !important;
-}
+	.smscButton:hover {
+		border: 1px solid #940 !important;
+	}
 }
 
 @-moz-document url-prefix("https://sibbo.smartschool.be/Upload") {
-body.modern-ui,
-.go * {
-	background-color: #222;
-	color: #fff !important;
-}
-.smsc-tabslist__item,
-.smsc-table__header:hover,
-.smsc-table__row:hover,
-.modern-ui .smsc-table__header {
-	background: #222 !important;
-}
-.smsc-tabslist__item::before,
-.smsc-tabslist__item::after {
-	display: none;
-}
-.smsc-tabslist__item a {
-	text-shadow: none;
-}
-.modern-ui .smscButton,
-.modern-ui .smscButton:hover {
-	background: #333;
-}
-.smscButton.blue {
-	border-color: #666;
-}
+	body.modern-ui,
+	.go * {
+		background-color: #222;
+		color: #fff !important;
+	}
+	.smsc-tabslist__item,
+	.smsc-table__header:hover,
+	.smsc-table__row:hover,
+	.modern-ui .smsc-table__header {
+		background: #222 !important;
+	}
+	.smsc-tabslist__item::before,
+	.smsc-tabslist__item::after {
+		display: none;
+	}
+	.smsc-tabslist__item a {
+		text-shadow: none;
+	}
+	.modern-ui .smscButton,
+	.modern-ui .smscButton:hover {
+		background: #333;
+	}
+	.smscButton.blue {
+		border-color: #666;
+	}
 }
 
 @-moz-document url-prefix("https://sibbo.smartschool.be/index.php?module=Forum") {
-#smscMain {
-	background-color: #222 !important;
-	padding-top: 12px;
-}
+	#smscMain {
+		background-color: #222 !important;
+		padding-top: 12px;
+	}
 
-#smscMain * {
-	border: none;
-}
+	#smscMain * {
+		border: none;
+	}
 
-.smscleftnavcontainer {
-	background-color: #333 !important;
-	box-shadow: none !important;
-	border: 1px solid #666 !important;
-}
+	.smscleftnavcontainer {
+		background-color: #333 !important;
+		box-shadow: none !important;
+		border: 1px solid #666 !important;
+	}
 
-.smsc-column-nav__button {
-	color: #fff !important;
-}
+	.smsc-column-nav__button {
+		color: #fff !important;
+	}
 
-.smsc-column-nav__button:hover {
-	border-radius: 5px;
-	border-collapse: separate;
-	background-color: #666 !important;
-	border: 1px solid #940 !important;
-}
+	.smsc-column-nav__button:hover {
+		border-radius: 5px;
+		border-collapse: separate;
+		background-color: #666 !important;
+		border: 1px solid #940 !important;
+	}
 }
 
 @-moz-document url-prefix("https://sibbo.smartschool.be/index.php?module=Wiki") {
-#smscMain {
-	background-color: #222 !important;
-	padding-top: 12px;
-}
+	#smscMain {
+		background-color: #222 !important;
+		padding-top: 12px;
+	}
 
-#smscMain * {
-	border: none;
-}
+	#smscMain * {
+		border: none;
+	}
 
-.smscleftnavcontainer {
-	background-color: #333 !important;
-	box-shadow: none !important;
-	border: 1px solid #666 !important;
-}
+	.smscleftnavcontainer {
+		background-color: #333 !important;
+		box-shadow: none !important;
+		border: 1px solid #666 !important;
+	}
 
-.smsc-column-nav__button {
-	color: #fff !important;
-}
+	.smsc-column-nav__button {
+		color: #fff !important;
+	}
 
-.smsc-column-nav__button:hover {
-	border-radius: 5px;
-	border-collapse: separate;
-	background-color: #666 !important;
-	border: 1px solid #940 !important;
-}
+	.smsc-column-nav__button:hover {
+		border-radius: 5px;
+		border-collapse: separate;
+		background-color: #666 !important;
+		border: 1px solid #940 !important;
+	}
 }
 
 @-moz-document url-prefix("https://sibbo.smartschool.be/index.php?module=Messages") {
-.go * {
-	color: #fff;
-}
-.attachment__title__label {
-	color: #fff !important;
-}
-.folders {
-	width: 240px !important;
-}
+	.go * {
+		color: #fff;
+	}
+	.attachment__title__label {
+		color: #fff !important;
+	}
+	.folders {
+		width: 240px !important;
+	}
 
-.msgcell__parent-td *,
-#newltoptable,
-.modmessages * {
+	.msgcell__parent-td *,
+	#newltoptable,
+	.modmessages * {
 
-	background-color: #222;
-}
+		background-color: #222;
+	}
 
-#folders_parent_table *,
-.toolbar,
-#folders_parent_td {
-	background-color: #333;
-}
+	#folders_parent_table *,
+	.toolbar,
+	#folders_parent_td {
+		background-color: #333;
+	}
 
-.modern-ui .modern-message {
-	border-radius: 12px;
-	border: 1px solid #666;
-	margin-bottom: 2px;
-}
+	.modern-ui .modern-message {
+		border-radius: 12px;
+		border: 1px solid #666;
+		margin-bottom: 2px;
+	}
 
-.modern-ui .modern-message--selected,
-.modern-ui .modern-message--selected:hover {
-	background-color: #666;
-	border-radius: 12px;
-	border-color: #f40;
-}
+	.modern-ui .modern-message--selected,
+	.modern-ui .modern-message--selected:hover {
+		background-color: #666;
+		border-radius: 12px;
+		border-color: #f40;
+	}
 
-.modern-ui .modern-message--selected * {
-	background-color: #666;
-}
+	.modern-ui .modern-message--selected * {
+		background-color: #666;
+	}
 
-.modern-ui .modern-message:hover,
-.modern-ui .modern-message:hover * {
-	background-color: #0000;
-	border-color: #940;
-}
+	.modern-ui .modern-message:hover,
+	.modern-ui .modern-message:hover * {
+		background-color: #0000;
+		border-color: #940;
+	}
 
-.smscButton {
-	background-color: #333 !important;
-	color: #fff !important;
-	border-color: #666 !important;
-}
+	.smscButton {
+		background-color: #333 !important;
+		color: #fff !important;
+		border-color: #666 !important;
+	}
 
-#sort_list_menu {
-	border-radius: 10px !important;
-}
+	#sort_list_menu {
+		border-radius: 10px !important;
+	}
 
-.smsc-contextmenu-arrow:before,
-.smsc-contextmenu-arrow:after {
-	border-color: #940 transparent !important;
-}
+	.smsc-contextmenu-arrow:before,
+	.smsc-contextmenu-arrow:after {
+		border-color: #940 transparent !important;
+	}
 
-.smsc-contextmenu-bubble,
-.smsc-contextmenu-bubble * {
-	border-color: #940 !important;
-	background-color: #333 !important;
-	color: #fff !important;
-}
+	.smsc-contextmenu-bubble,
+	.smsc-contextmenu-bubble * {
+		border-color: #940 !important;
+		background-color: #333 !important;
+		color: #fff !important;
+	}
 
-.list {
-	-ms-overflow-style: none !important;
-	scrollbar-width: none !important;
-}
+	.list {
+		-ms-overflow-style: none !important;
+		scrollbar-width: none !important;
+	}
 
-::-webkit-scrollbar {
-	display: none;
-}
+	::-webkit-scrollbar {
+		display: none;
+	}
 
-.toolbar * {
-	background-color: #0000;
-}
+	.toolbar * {
+		background-color: #0000;
+	}
 
-.toolbar {
-	border-left: 1px solid #666;
-	border-right: 1px solid #666;
-}
-.msgContentVal > div,
-.msgContentVal > div *,
-.msgHeaderVal,
-.msgSubject,
-.msgcell__head__title {
-	color: #940 !important;
-}
-.toolbar::before,
-.toolbar::after {
-	border-color: #666 !important;
-	background: linear-gradient(#666, #666) repeat-y !important;
-	background-size: 1px 1px !important;
-	background-position: center !important;
-}
-.modern-ui .modern-message__actions {
-	box-shadow: none !important;
-	background-color: #0000 !important;
-}
-.modern-message__action {
-	margin-left: 2px;
-}
+	.toolbar {
+		border-left: 1px solid #666;
+		border-right: 1px solid #666;
+	}
+	.msgContentVal > div,
+	.msgContentVal > div *,
+	.msgHeaderVal,
+	.msgSubject,
+	.msgcell__head__title {
+		color: #940 !important;
+	}
+	.toolbar::before,
+	.toolbar::after {
+		border-color: #666 !important;
+		background: linear-gradient(#666, #666) repeat-y !important;
+		background-size: 1px 1px !important;
+		background-position: center !important;
+	}
+	.modern-ui .modern-message__actions {
+		box-shadow: none !important;
+		background-color: #0000 !important;
+	}
+	.modern-message__action {
+		margin-left: 2px;
+	}
 
-#msgdetail {
-	-ms-overflow-style: none !important;
-	scrollbar-width: none !important;
-}
+	#msgdetail {
+		-ms-overflow-style: none !important;
+		scrollbar-width: none !important;
+	}
 
-.modern-ui .msgcell__parent-td {
-	max-width: calc(100vw - 270px + 30px + 168px) !important;
-}
+	.modern-ui .msgcell__parent-td {
+		max-width: calc(100vw - 270px + 30px + 168px) !important;
+	}
 
-#msgcell,
-#msgcell * {
-	background-color: #333;
-}
+	#msgcell,
+	#msgcell * {
+		background-color: #333;
+	}
 
-#modmessages > tbody > tr {
-	width: 100% !important;
-}
+	#modmessages > tbody > tr {
+		width: 100% !important;
+	}
 
-#newltoptable {
-	width: 100% !important;
-}
+	#newltoptable {
+		width: 100% !important;
+	}
 
-#newltoptable #msgcell {
-	overflow: hidden hidden;
-	border-radius: 15px !important;
-	padding: 10px;
-}
+	#newltoptable #msgcell {
+		overflow: hidden hidden;
+		border-radius: 15px !important;
+		padding: 10px;
+	}
 
-.msgcell__parent-td #msgcell {
-	overflow: hidden hidden;
-	border-radius: 15px !important;
-	padding: 10px;
-}
+	.msgcell__parent-td #msgcell {
+		overflow: hidden hidden;
+		border-radius: 15px !important;
+		padding: 10px;
+	}
 
-.msgcell__parent-td .messageframe {
-	height: 98%;
-	overflow: hidden;
-}
+	.msgcell__parent-td .messageframe {
+		height: 98%;
+		overflow: hidden;
+	}
 
-#newltoptable .messageframe {
-	height: 105%;
-}
+	#newltoptable .messageframe {
+		height: 105%;
+	}
 
-.modern-ui .context-menu {
-	background-color: #222;
-	border-radius: 8px;
-	border: 1px solid #666;
-	box-shadow: none !important;
-}
+	.modern-ui .context-menu {
+		background-color: #222;
+		border-radius: 8px;
+		border: 1px solid #666;
+		box-shadow: none !important;
+	}
 
-.modmessages > tbody > tr > td:last-of-type {
-	width: 10px !important;
-}
-#msglist > div:last-of-type {
-	margin-bottom: 30px;
-}
+	.modmessages > tbody > tr > td:last-of-type {
+		width: 10px !important;
+	}
+	#msglist > div:last-of-type {
+		margin-bottom: 30px;
+	}
 
-.ui-widget{
-	border-radius: 8px;
-	border: 1px solid #666 !important;
-	background: #333;
-}
+	.ui-widget{
+		border-radius: 8px;
+		border: 1px solid #666 !important;
+		background: #333;
+	}
 
-.message-search__wrapper {
-	background: #333;
-	border-bottom: none;
-}
+	.message-search__wrapper {
+		background: #333;
+		border-bottom: none;
+	}
 
-.message-search__select, .smsc-select-bubble{
-	background:  #444 !important;
-	border-color: #666 !important;
-	color: #fff;
-}
+	.message-search__select, .smsc-select-bubble{
+		background:  #444 !important;
+		border-color: #666 !important;
+		color: #fff;
+	}
 
-.message-search__input, .message-search__input::placeholder{
-	border-radius: 4px;
-	border: 1px solid #666;
-	background: #444;
-	color: #fff !important;
-	outline: none;
-}
+	.message-search__input, .message-search__input::placeholder{
+		border-radius: 4px;
+		border: 1px solid #666;
+		background: #444;
+		color: #fff !important;
+		outline: none;
+	}
 
-.smsc-select-option.item:hover{
-	background: #555 !important;
-}
+	.smsc-select-option.item:hover{
+		background: #555 !important;
+	}
 }
 
 @-moz-document url-prefix("https://sibbo.smartschool.be/index.php?module=Messages&file=composeMessage") {
-.smscComposeMessage {
-	background: #222;
-}
+	.smscComposeMessage {
+		background: #222;
+	}
 
-.searchDivResult.selected,
-.searchDivResult,
-.searchDivResult *{
-	background-color: #333;
-}
+	.searchDivResult.selected,
+	.searchDivResult,
+	.searchDivResult *{
+		background-color: #333;
+	}
 
-.mainContainer > table > tbody > tr:nth-last-of-type(n+3) > td, .compose_value div, .compose_value input{
-	background: none;
-	background-color: #444;
-}
+	.mainContainer > table > tbody > tr:nth-last-of-type(n+3) > td, .compose_value div, .compose_value input{
+		background: none;
+		background-color: #444;
+	}
 
-.compose-options {
-	margin-top: 8px !important;
-}
+	.compose-options {
+		margin-top: 8px !important;
+	}
 
-.accswitchmain, .accswitchco{
-	background: #333;
-	border-top-left-radius: 12px;
-	border-top-right-radius: 12px;
-	height: 23px;
-	line-height: 24px;
-}
+	.accswitchmain, .accswitchco{
+		background: #333;
+		border-top-left-radius: 12px;
+		border-top-right-radius: 12px;
+		height: 23px;
+		line-height: 24px;
+	}
 
-.mbselected{
-	background: #444;
-}
+	.mbselected{
+		background: #444;
+	}
 
-.receiverSpan{
-	background-repeat: none;
-}
+	.receiverSpan{
+		background-repeat: none;
+	}
 
-#searchDivContent {
-	background-color: #333;
-	border: 1px solid #666;
-}
+	#searchDivContent {
+		background-color: #333;
+		border: 1px solid #666;
+	}
 
-.receiverSpanName.user {
-	background-repeat: no-repeat;
-}
+	.receiverSpanName.user {
+		background-repeat: no-repeat;
+	}
 
-#compose_editor * {
-	background-color: #333;
-	color: #fff;
-}
+	#compose_editor * {
+		background-color: #333;
+		color: #fff;
+	}
 
-.tox .tox-tbtn svg {
-	fill: #666;
-}
+	.tox .tox-tbtn svg {
+		fill: #666;
+	}
 
-.tox .tox-tbtn:hover svg {
-	fill: #fff;
-}
+	.tox .tox-tbtn:hover svg {
+		fill: #fff;
+	}
 
-.tox .tox-toolbar__group {
-	background: url("data:image/svg+xml;charset=utf8,%3Csvg height='29px' viewBox='0 0 40 29px' width='40' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='28px' width='100' height='1' fill='%23cccccc'/%3E%3C/svg%3E") left 0 top 0 #666;
-}
+	.tox .tox-toolbar__group {
+		background: url("data:image/svg+xml;charset=utf8,%3Csvg height='29px' viewBox='0 0 40 29px' width='40' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='28px' width='100' height='1' fill='%23cccccc'/%3E%3C/svg%3E") left 0 top 0 #666;
+	}
 
-.mce-content-body {
-	color: #fff;
-}
+	.mce-content-body {
+		color: #fff;
+	}
 
-.msg_button:hover {
-	color: #fff;
-	border-radius: 8px;
-	border: 1px solid #940;
-	background-color: #333;
-}
+	.msg_button:hover {
+		color: #fff;
+		border-radius: 8px;
+		border: 1px solid #940;
+		background-color: #333;
+	}
 
-.msg_button {
-	color: #fff;
-	border-radius: 8px;
-	border: 1px solid #666;
-	background-color: #222;
-}
+	.msg_button {
+		color: #fff;
+		border-radius: 8px;
+		border: 1px solid #666;
+		background-color: #222;
+	}
 
-#nrRecipients_mainacc {
-	background-color: #2220;
-	width: inherit;
-}
+	#nrRecipients_mainacc {
+		background-color: #2220;
+		width: inherit;
+	}
 
-#nrRecipients_mainacc * {
-	background-color: #3330;
-	height: 100%;
-}
+	#nrRecipients_mainacc * {
+		background-color: #3330;
+		height: 100%;
+	}
 
-.receiverSpan.user {
-	color: #fff;
-	border-color: #666;
-	background-color: #333;
-}
+	.receiverSpan.user {
+		color: #fff;
+		border-color: #666;
+		background-color: #333;
+	}
 
-.receiverSpan.user * {
-	background-color: #333;
-}
+	.receiverSpan.user * {
+		background-color: #333;
+	}
 }
 
 @-moz-document url-prefix("https://sibbo.smartschool.be/index.php?module=Agenda") {
-.go {
-	background-color: #222;
-}
+	.go {
+		background-color: #222;
+	}
 
-.navTitle {
-	color: #F40 !important;
-}
+	.navTitle {
+		color: #F40 !important;
+	}
 
-.border {
-	background: none !important;
-}
+	.border {
+		background: none !important;
+	}
 
-#infoFormWindow_contentDiv * {
-	color: #fff;
-}
+	#infoFormWindow_contentDiv * {
+		color: #fff;
+	}
 
-.menuContainer,
-.leftContainer,
-.rightContainer {
-	background: #333;
-	border-top-left-radius: 15px;
-	border-bottom-left-radius: 15px;
-	border: 1px solid #666;
-}
+	.menuContainer,
+	.leftContainer,
+	.rightContainer {
+		background: #333;
+		border-top-left-radius: 15px;
+		border-bottom-left-radius: 15px;
+		border: 1px solid #666;
+	}
 
-.menuContainer {
-	width: 2.5% !important;
-}
+	.menuContainer {
+		width: 2.5% !important;
+	}
 
-.leftContainer {
-	width: 80% !important;
-}
+	.leftContainer {
+		width: 80% !important;
+	}
 
-.rightContainer {
-	width: 16.5% !important;
-}
+	.rightContainer {
+		width: 16.5% !important;
+	}
 
-.border.centerxy {
-	border-right: none !important;
-}
+	.border.centerxy {
+		border-right: none !important;
+	}
 
-#menuContainerBottom,
-#contentContainerTotal {
-	border: none !important;
-}
+	#menuContainerBottom,
+	#contentContainerTotal {
+		border: none !important;
+	}
 
-.agenda_grid_content {
-	-ms-overflow-style: none;
-	scrollbar-width: none;
-}
+	.agenda_grid_content {
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
 
-.leftContainer {
-	border-top-right-radius: 15px;
-	border-bottom-right-radius: 15px;
-}
+	.leftContainer {
+		border-top-right-radius: 15px;
+		border-bottom-right-radius: 15px;
+	}
 
-.rightContainer {
-	border-top-right-radius: 15px;
-	border-bottom-right-radius: 15px;
-	margin-right: 5px;
-}
+	.rightContainer {
+		border-top-right-radius: 15px;
+		border-bottom-right-radius: 15px;
+		margin-right: 5px;
+	}
 
-.agenda_grid_header_day,
-.agenda_grid_hour_title > .agenda_grid_hour_p {
-	color: #940 !important;
-}
+	.agenda_grid_header_day,
+	.agenda_grid_hour_title > .agenda_grid_hour_p {
+		color: #940 !important;
+	}
 
-.color_zilver {
-	background-color: #333;
-	border-color: #666;
-}
+	.color_zilver {
+		background-color: #333;
+		border-color: #666;
+	}
 
-.color_snow_white {
-	display: none;
-}
+	.color_snow_white {
+		display: none;
+	}
 
-.color_zilver:hover {
-	background-color: #666;
-	border-color: #940;
-}
+	.color_zilver:hover {
+		background-color: #666;
+		border-color: #940;
+	}
 
-.agenda_grid_hour_p,
-.agendaGridBlockContentLeft,
-.tasksAndMaterials__blocks {
-	color: #fff;
-}
+	.agenda_grid_hour_p,
+	.agendaGridBlockContentLeft,
+	.tasksAndMaterials__blocks {
+		color: #fff;
+	}
 
-::after {
-	display: none !important;
-}
+	::after {
+		display: none !important;
+	}
 
-.tasksAndMaterials__day {
-	border-top: 1px solid #666;
-	padding-top: 5px;
-	margin-top: 0px;
-}
+	.tasksAndMaterials__day {
+		border-top: 1px solid #666;
+		padding-top: 5px;
+		margin-top: 0px;
+	}
 
-.navigationContainer > table {
-	width: 82.5%;
-}
+	.navigationContainer > table {
+		width: 82.5%;
+	}
 
-.navTitle {
-	margin: 0px !important;
-	margin-left: 100px !important;
-}
+	.navTitle {
+		margin: 0px !important;
+		margin-left: 100px !important;
+	}
 
-.hasDatepicker {
-	border-radius: 6px;
-	padding-left: 9px;
-	padding-right: 9px;
-	background-color: #333;
-	color: #fff;
-	border: 1px solid #666;
-}
+	.hasDatepicker {
+		border-radius: 6px;
+		padding-left: 9px;
+		padding-right: 9px;
+		background-color: #333;
+		color: #fff;
+		border: 1px solid #666;
+	}
 
-.tasksAndMaterials__blocks {
-	-ms-overflow-style: none;
-	scrollbar-width: none;
-}
+	.tasksAndMaterials__blocks {
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
 
-.tasksAndMaterials__title {
-	color: #940;
-}
+	.tasksAndMaterials__title {
+		color: #940;
+	}
 
-tasksAndMaterials-day:not(:last-child):not(:empty) {
-	margin-bottom: 5px;
-}
+	tasksAndMaterials-day:not(:last-child):not(:empty) {
+		margin-bottom: 5px;
+	}
 
-.smscMain {
-	height: 100%;
-}
+	.smscMain {
+		height: 100%;
+	}
 
-.smscCheckbox > label {
-	color: #fff;
-}
+	.smscCheckbox > label {
+		color: #fff;
+	}
 
-#contentContainerTotal,
-#contentContainer,
-.agenda_grid_days {
-	width: 100% !important;
-}
+	#contentContainerTotal,
+	#contentContainer,
+	.agenda_grid_days {
+		width: 100% !important;
+	}
 
-#infoFormWindow {
-	background-color: #222;
-	color: #fff;
-	padding-left: 10px;
-	padding-right: 10px;
-}
+	#infoFormWindow {
+		background-color: #222;
+		color: #fff;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 
-#infoFormWindow_movableDiv > div.wborder.wbleft,
-div.wborder.wbright {
-	display: none;
-}
+	#infoFormWindow_movableDiv > div.wborder.wbleft,
+	div.wborder.wbright {
+		display: none;
+	}
 
-#infoFormWindow_titlebar {
-	width: 100% !important;
-	display: absolute !important;
-}
+	#infoFormWindow_titlebar {
+		width: 100% !important;
+		display: absolute !important;
+	}
 
-#rightContainerBottom {
-	border: none;
-}
+	#rightContainerBottom {
+		border: none;
+	}
 
-.lessonFormTitleContainer {
-	color: #fff !important;
-}
+	.lessonFormTitleContainer {
+		color: #fff !important;
+	}
 
-.tabs {
-	background-image: none !important;
-}
+	.tabs {
+		background-image: none !important;
+	}
 
-.tabs li,
-.tabs li.current {
-	color: #fff;
-	background: none;
-	background-color: #333;
-	border-radius: 5px;
-	border: 1px solid #666;
-}
+	.tabs li,
+	.tabs li.current {
+		color: #fff;
+		background: none;
+		background-color: #333;
+		border-radius: 5px;
+		border: 1px solid #666;
+	}
 
-.tabs li.current {
-	background-color: #940;
-}
+	.tabs li.current {
+		background-color: #940;
+	}
 
-.tabs li span {
-	background: none !important;
-}
+	.tabs li span {
+		background: none !important;
+	}
 
-#infoContainerStudent {
-	border-radius: 5px;
-	border: 1px solid #666;
-	background-color: #444;
-	-ms-overflow-style: none !important;
-	scrollbar-width: none !important;
-}
+	#infoContainerStudent {
+		border-radius: 5px;
+		border: 1px solid #666;
+		background-color: #444;
+		-ms-overflow-style: none !important;
+		scrollbar-width: none !important;
+	}
 
-::-webkit-scrollbar {
-	display: none;
-}
+	::-webkit-scrollbar {
+		display: none;
+	}
 
-#infoContainerNoteContent {
-	color: #fff;
-	width: 100% !important;
-	height: 100% !important;
-	border: none;
-	background-color: #444;
-}
+	#infoContainerNoteContent {
+		color: #fff;
+		width: 100% !important;
+		height: 100% !important;
+		border: none;
+		background-color: #444;
+	}
 
-#infoFormWindow_leftBorder {
-	display: none !important;
-}
+	#infoFormWindow_leftBorder {
+		display: none !important;
+	}
 
-#infoFormWindow_contentDiv {
-	border-radius: 15px;
-	border: 1px solid #666;
-	background-color: #333 !important;
-	width: 100% !important;
-}
-#infoContainerAssignments, .infoContainerBlock {
-	background-color: #333 !important;
-}
+	#infoFormWindow_contentDiv {
+		border-radius: 15px;
+		border: 1px solid #666;
+		background-color: #333 !important;
+		width: 100% !important;
+	}
+	#infoContainerAssignments, .infoContainerBlock {
+		background-color: #333 !important;
+	}
 
-#infoContainerAssignments {
-	border-radius: 8px;
-	border: 1px solid #666
-}
+	#infoContainerAssignments {
+		border-radius: 8px;
+		border: 1px solid #666
+	}
 
-.infoContainerButton{
-	background: #333 !important;
-}
+	.infoContainerButton{
+		background: #333 !important;
+	}
 
-.gradient_window {
-	border-radius: 15px;
-	border: 1px solid #940;
-}
+	.gradient_window {
+		border-radius: 15px;
+		border: 1px solid #940;
+	}
 
-.wborder {
-	background-image: none !important;
-}
+	.wborder {
+		background-image: none !important;
+	}
 }
