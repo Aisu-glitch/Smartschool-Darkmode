@@ -1,13 +1,13 @@
 /* ==UserStyle==
-@name          Smartschool Theme
-@description  A smartschool theme
-@version     0.0.1
-@author       Dario Busia
-@license      unlicense
-@preprocessor default
+@name		Smartschool Darkmode
+@description  	A smartschool theme
+@version     	0.0.1
+@author       	Dario Busia
+@license      	unlicense
+@preprocessor 	default
 @namespace      github.com/Aisu-glitch
-@homepageURL   https://github.com/Aisu-glitch/Smartschool-Darkmode
-@updateURL     https://github.com/Aisu-glitch/Smartschool-Darkmode/raw/master/release/theme.user.css
+@homepageURL   	https://github.com/Aisu-glitch/Smartschool-Darkmode
+@updateURL     	https://github.com/Aisu-glitch/Smartschool-Darkmode/raw/master/release/theme.user.css
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://sibbo.smartschool.be/") {
