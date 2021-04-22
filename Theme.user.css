@@ -4,10 +4,13 @@
 @version     	0.0.3
 @author       	Dario Busia
 @license      	MIT
-@preprocessor 	uso
+@preprocessor 	stylus
 @namespace      https://github.com/Aisu-glitch
-@homepageURL   	https://github.com/Aisu-glitch/Smartschool-Darkmode
+@homepageURL   	https://github.com/Aisu-glitch/Smartschool-Darkmode/
+@supportURL		https://github.com/Aisu-glitch/Smartschool-Darkmode/issues
 @updateURL     	https://github.com/Aisu-glitch/Smartschool-Darkmode/raw/Master/Theme.user.css
+@var text myFontSize "Select a font size" 14px
+@var select theme "Theme" ["dark:Dark theme", "light:Light theme"]
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://sibbo.smartschool.be/") {
