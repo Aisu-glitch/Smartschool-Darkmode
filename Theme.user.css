@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name		Smartschool Darkmode
 @description  	A smartschool theme
-@version     	0.0.4
+@version     	0.0.5
 @author       	Dario Busia
 @license      	MIT
 @preprocessor 	stylus
@@ -156,7 +156,6 @@
 	}
 
 	.smsc-topnav .topnav__btn {
-		background: none !important;
 		transition: background-position 350ms, padding-bottom 350ms, line-height 350ms !important;
 		background: linear-gradient(0deg, rgba(153, 68, 0, 0.5) 0%, rgba(0, 0, 0, 0) 30%) !important;
 		background-position: 0px 10px !important;
@@ -266,7 +265,6 @@
 	.modern-ui .smscButton.blue {
 		background-color: #333;
 		color: #fff;
-		autocomplete: false;
 	}
 
 	.modern-ui .smscButton.blue:hover:not([disabled]) {
@@ -652,7 +650,7 @@
 	.tree-classic ul {
 		background-position: 6px 1px !important;
 		background-repeat: repeat-y !important;
-		background-image: url(data:image/gif;base64,R0lGODlhAgACAIAAAB4dGf///yH5BAEAAAEALAAAAAACAAIAAAICRF4AOw==) !important;
+		background-image: url("data:image/gif;base64,R0lGODlhAgACAIAAAB4dGf///yH5BAEAAAEALAAAAAACAAIAAAICRF4AOw==") !important;
 	}
 
 	.tree-classic li.open {
