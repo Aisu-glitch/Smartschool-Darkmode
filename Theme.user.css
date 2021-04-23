@@ -21,43 +21,46 @@
 		background-color: #333 !important;
 		color: #f40 !important;
 	}
-
+	
+	.smscMain  {
+		scrollbar-width: none;
+	}
+	
 	.smsc-topnav .topnav__btn.topnav__btn--icon.topnav__btn--icon--search {
 		background: url(https://sibbo.smartschool.be/smsc/svg/search_ic_white/search_ic_white_24x24.svg) !important;
-		background-repeat: no-repeat !important;
-		background-position: 50% 50% !important;
+		
 	}
 
 	.smsc-topnav .topnav__btn.topnav__btn--icon.topnav__btn--icon--manual {
 		background: url(https://sibbo.smartschool.be/smsc/svg/help_ic_white/help_ic_white_24x24.svg) !important;
-		background-repeat: no-repeat !important;
-		background-position: 50% 50% !important;
 	}
 
 	.smsc-topnav .topnav__btn.topnav__btn--icon.topnav__btn--icon--exit {
 		background: url(https://sibbo.smartschool.be/smsc/svg/exit_ic_white/exit_ic_white_24x24.svg) !important;
-		background-repeat: no-repeat !important;
-		background-position: 50% 50% !important;
 	}
 
 	.smsc-topnav .topnav__btn.topnav__btn--icon.topnav__btn--icon--search:hover {
 		background: linear-gradient(0deg, rgba(153, 68, 0, 0.5) 0%, rgba(0, 0, 0, 0) 30%), url(https://sibbo.smartschool.be/smsc/svg/search_ic_white/search_ic_white_24x24.svg) !important;
-		background-repeat: no-repeat !important;
-		background-position: 50% 25% !important;
 	}
 
 	.smsc-topnav .topnav__btn.topnav__btn--icon.topnav__btn--icon--manual:hover {
 		background: linear-gradient(0deg, rgba(153, 68, 0, 0.5) 0%, rgba(0, 0, 0, 0) 30%), url(https://sibbo.smartschool.be/smsc/svg/help_ic_white/help_ic_white_24x24.svg) !important;
-		background-repeat: no-repeat !important;
-		background-position: 50% 25% !important;
 	}
 
 	.smsc-topnav .topnav__btn.topnav__btn--icon.topnav__btn--icon--exit:hover {
 		background: linear-gradient(0deg, rgba(153, 68, 0, 0.5) 0%, rgba(0, 0, 0, 0) 30%), url(https://sibbo.smartschool.be/smsc/svg/exit_ic_white/exit_ic_white_24x24.svg) !important;
-		background-repeat: no-repeat !important;
-		background-position: 50% 25% !important;
 	}
-
+	
+	.smsc-topnav .topnav__btn.topnav__btn--icon.topnav__btn--icon--search,
+	.smsc-topnav .topnav__btn.topnav__btn--icon.topnav__btn--icon--search:hover,
+	.smsc-topnav .topnav__btn.topnav__btn--icon.topnav__btn--icon--manual,
+	.smsc-topnav .topnav__btn.topnav__btn--icon.topnav__btn--icon--manual:hover,
+	.smsc-topnav .topnav__btn.topnav__btn--icon.topnav__btn--icon--exit,
+	.smsc-topnav .topnav__btn.topnav__btn--icon.topnav__btn--icon--exit:hover{
+		background-repeat: no-repeat !important;
+		background-position: 50% 50% !important;
+	}
+	
 	.course-ico.course-ico--own {
 		border: none !important;
 	}
@@ -988,7 +991,23 @@
 	.smscComposeMessage {
 		background: #222;
 	}
-
+	
+	.nr_recipients_left, .nr_recipients_main, .nr_recipients_right{
+		background: none;
+	}
+	
+	.nr_recipients_bubble{
+		margin-left: 25px;
+		background: #333 !important;
+		border-radius: 12px;
+		border: 2px solid #666;
+	}
+	
+	.nr_recipients_main{
+		line-height: 24px;
+	}
+		
+	
 	.searchDivResult.selected,
 	.searchDivResult,
 	.searchDivResult *{
@@ -1064,7 +1083,7 @@
 		background-color: #222;
 	}
 
-	#nrRecipients_mainacc {
+	#nrRecipients_mainacc , .nr_recipients_bubble{
 		background-color: #2220;
 		width: inherit;
 	}
@@ -1083,6 +1102,11 @@
 	.receiverSpan.user * {
 		background-color: #333;
 	}
+	
+	.receiverSpanName.userm{
+		background-repeat: no-repeat;
+	}
+	
 }
 
 @-moz-document url-prefix("https://sibbo.smartschool.be/index.php?module=Agenda") {
