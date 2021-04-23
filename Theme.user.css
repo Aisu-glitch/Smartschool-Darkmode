@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name		Smartschool Darkmode
 @description  	A smartschool theme
-@version     	0.0.6
+@version     	0.0.7
 @author       	Dario Busia
 @license      	MIT
 @preprocessor 	stylus
@@ -988,8 +988,19 @@
 }
 
 @-moz-document url-prefix("https://sibbo.smartschool.be/index.php?module=Messages&file=composeMessage") {
-	.smscComposeMessage {
-		background: #222;
+	.smscComposeMessage{
+		background-color: #222;
+		border: none;
+	}
+	
+	.ui-widget-header, .ui-dialog-buttonpane, .tabmain, #tabmaina *{
+		background-color: #333;
+		border: none;
+	}
+	
+	.attachContainertitle{
+		padding-bottom: 1.333rem;
+		margin-bottom: 0 !important;
 	}
 	
 	.nr_recipients_left, .nr_recipients_main, .nr_recipients_right{
@@ -1049,10 +1060,17 @@
 	}
 
 	#compose_editor * {
-		background-color: #333;
 		color: #fff;
 	}
-
+	
+	 .tox * {
+		background-color: #333 !important;
+	}
+	
+	.attachmentContainer {
+		height: auto;
+	}
+	
 	.tox .tox-tbtn svg {
 		fill: #666;
 	}
@@ -1106,7 +1124,6 @@
 	.receiverSpanName.userm{
 		background-repeat: no-repeat;
 	}
-	
 }
 
 @-moz-document url-prefix("https://sibbo.smartschool.be/index.php?module=Agenda") {
