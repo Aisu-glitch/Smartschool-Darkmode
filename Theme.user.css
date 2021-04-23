@@ -226,31 +226,27 @@
 		color: #fff;
 	}
 
-	.login-app__left {
-		display: none;
+	.js-hero-image{
+		filter: blur(2px) brightness(70%) contrast(90%);
+		background-image: url(https://vjloopsfarm.com/wp-content/uploads/2019/05/Red-Keter-sequence-patterns.-4k.-Abstract-multicolored-motion-graphics-background.-VJ-Loop-LIMEART_003.jpg) !important
 	}
 
 	.login-app__container {
 		background-color: #2229;
 		justify-content: center !important;
 	}
-
-	.login-app {
-		background-image: url(https://vjloopsfarm.com/wp-content/uploads/2019/05/Red-Keter-sequence-patterns.-4k.-Abstract-multicolored-motion-graphics-background.-VJ-Loop-LIMEART_003.jpg);
-		background-size: cover;
-		background-position: center;
-	}
-
+	
 	.login-app__right {
+		position:  absolute;
 		display: normal;
-		background-color: #222222ef;
-		box-shadow: 0 0 1000px 0 #222 !important;
-		border-left: 2px solid #f40;
-		border-right: 2px solid #f40;
+		background: radial-gradient(closest-side, rgb(34, 36, 38) 60%, #0000 95%);
+		background-position-y: 20px;
+		box-shadow: none!important;
 		width: 100% !important;
 	}
 
 	.login-app__school-logo {
+		width: 96px;
 		background-image: url(https://sibbo.smartschool.be/smsc/svg/logo_smartschool/logo_smartschool_16x16.svg) !important;
 	}
 
@@ -261,6 +257,7 @@
 	#login_form__username,
 	#login_form__password,
 	.modern-ui .smscButton.blue {
+		outline: none !important;
 		background-color: #333;
 		color: #fff;
 	}
