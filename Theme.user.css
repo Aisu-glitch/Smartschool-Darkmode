@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name		Smartschool Darkmode
 @description  	A smartschool theme
-@version     	0.0.7
+@version     	0.0.8
 @author       	Dario Busia
 @license      	MIT
 @preprocessor 	stylus
@@ -230,9 +230,9 @@
 	}
 
 	.js-hero-image{
-		filter: blur(2px) brightness(70%) contrast(90%);
-		background-image: url(https://vjloopsfarm.com/wp-content/uploads/2019/05/Red-Keter-sequence-patterns.-4k.-Abstract-multicolored-motion-graphics-background.-VJ-Loop-LIMEART_003.jpg) !important
-	}
+			background-image: url(https://vjloopsfarm.com/wp-content/uploads/2019/05/Red-Keter-sequence-patterns.-4k.-Abstract-multicolored-motion-graphics-background.-VJ-Loop-LIMEART_003.jpg) !important;
+			filter: blur(2px) brightness(70%) contrast(90%);
+		}
 
 	.login-app__container {
 		background-color: #2229;
@@ -241,11 +241,10 @@
 	
 	.login-app__right {
 		position:  absolute;
-		display: normal;
-		background: radial-gradient(closest-side, rgb(34, 36, 38) 60%, #0000 95%);
-		background-position-y: 20px;
+		background: radial-gradient(closest-side, #1D1C1D 60%, #0000 95%);
 		box-shadow: none!important;
-		width: 100% !important;
+		max-width: none !important;
+		width: 500px !important; 
 	}
 
 	.login-app__school-logo {
@@ -1063,7 +1062,7 @@
 		color: #fff;
 	}
 	
-	 .tox * {
+	.tox * {
 		background-color: #333 !important;
 	}
 	
