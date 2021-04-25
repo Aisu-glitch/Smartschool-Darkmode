@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name		Smartschool Darkmode
 @description  	A smartschool theme
-@version     	0.0.8
+@version     	0.1.00
 @author       	Dario Busia
 @license      	MIT
 @preprocessor 	stylus
@@ -98,11 +98,15 @@
 		color: #f40;
 	}
 
-	.topnav__menu-arrow::before,
 	.topnav__menu-arrow::after {
 		border-color: #940 transparent !important;
+		top: 0px
 	}
 
+	.topnav__menu-arrow::before{
+		border: none !important;
+	}
+	
 	.js-notif-close {
 		border-radius: 20px !important;
 		background-color: #333;
@@ -223,7 +227,11 @@
 	.go .login-app__platform-indicator {
 		background: none !important;
 	}
-
+	
+	.js-focus-visible{
+		overflow-y: hidden;
+	}
+	
 	#smartschoolAppLinkWebsitem,
 	.modern-ui .float-label__input + label > span {
 		color: #fff;
@@ -241,10 +249,16 @@
 	
 	.login-app__right {
 		position:  absolute;
-		background: radial-gradient(closest-side, #1D1C1D 60%, #0000 95%);
-		box-shadow: none!important;
+		background: #1D1C1DE0;
+		box-shadow: 0px 0px 30px 30px #1D1C1D;
+		transform: translate(50%, -50%);
 		max-width: none !important;
-		width: 500px !important; 
+		width: 360px !important; 
+		border-radius: 50% !important;
+		min-height:  560px !important;
+		min-width: 0% !important;
+		right: 50%;
+		top: 50%;
 	}
 
 	.login-app__school-logo {
@@ -913,6 +927,10 @@
 		background-color: #333;
 	}
 
+	#msgcell p{
+		background: #333 !important;
+	}
+	
 	#modmessages > tbody > tr {
 		width: 100% !important;
 	}
@@ -1117,11 +1135,8 @@
 	}
 
 	.receiverSpan.user * {
-		background-color: #333;
-	}
-	
-	.receiverSpanName.userm{
 		background-repeat: no-repeat;
+		background-color: #333;
 	}
 }
 
