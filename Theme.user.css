@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name		Smartschool Darkmode
 @description  	A smartschool theme
-@version     	0.1.0
+@version     	0.1.1
 @author       	Dario Busia
 @license      	MIT
 @preprocessor 	stylus
@@ -238,9 +238,9 @@
 	}
 
 	.js-hero-image{
-			background-image: url(https://vjloopsfarm.com/wp-content/uploads/2019/05/Red-Keter-sequence-patterns.-4k.-Abstract-multicolored-motion-graphics-background.-VJ-Loop-LIMEART_003.jpg) !important;
-			filter: blur(2px) brightness(70%) contrast(90%);
-		}
+		background-image: url(https://vjloopsfarm.com/wp-content/uploads/2019/05/Red-Keter-sequence-patterns.-4k.-Abstract-multicolored-motion-graphics-background.-VJ-Loop-LIMEART_003.jpg) !important;
+		filter: blur(2px) brightness(70%) contrast(90%);
+	}
 
 	.login-app__container {
 		background-color: #2229;
@@ -248,19 +248,28 @@
 	}
 	
 	.login-app__right {
+		overflow: visible;
 		position:  absolute;
 		background: #1D1C1DE0;
-		box-shadow: 0px 0px 30px 30px #1D1C1D;
+		box-shadow: 0px 0px 150px 300px #1D1C1D;
 		transform: translate(50%, -50%);
 		max-width: none !important;
-		width: 360px !important; 
+		width: 1px !important; 
 		border-radius: 50% !important;
-		min-height:  560px !important;
+		min-height: 0px !important;
+		height: 150px;
 		min-width: 0% !important;
 		right: 50%;
 		top: 50%;
 	}
 
+	.login-app__top{
+		position:absolute;
+		transform: translate(-50%);
+		align-content: center;
+		
+	}
+	
 	.login-app__school-logo {
 		width: 96px;
 		background-image: url(https://sibbo.smartschool.be/smsc/svg/logo_smartschool/logo_smartschool_16x16.svg) !important;
