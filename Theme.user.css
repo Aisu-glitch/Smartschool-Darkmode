@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name		Smartschool Darkmode
 @description  	A smartschool theme
-@version     	0.1.1
+@version     	0.1.2
 @author       	Dario Busia
 @license      	MIT
 @preprocessor 	stylus
@@ -1019,7 +1019,7 @@
 		border: none;
 	}
 	
-	.ui-widget-header, .ui-dialog-buttonpane, .tabmain, #tabmaina *{
+	.ui-widget-header, .ui-dialog-buttonpane, .tabmain, .sjabl_input, .templateselectdiv{
 		background-color: #333;
 		border: none;
 	}
@@ -1051,7 +1051,7 @@
 		background-color: #333;
 	}
 
-	.mainContainer > table > tbody > tr:nth-last-of-type(n+3) > td, .compose_value div, .compose_value input{
+	.mainContainer > table > tbody > tr:nth-last-of-type(n+3) > td, .compose_value div, .compose_value input, .templateRow:hover, .smsc-dropzone{
 		background: none;
 		background-color: #444;
 	}
@@ -1088,9 +1088,33 @@
 	#compose_editor * {
 		color: #fff;
 	}
-	
-	.tox * {
+	.tox > div,
+	.tox-editor-header > div,
+	.tox-editor-header > div > div,
+ 	.tox-edit-area__iframe,
+	.tox-dialog,
+	.tox-dialog__header,
+	.tox-dialog__footer{
 		background-color: #333 !important;
+	}
+	.tox-form input ,
+	.tox-form input *,
+	.tox-editor-header > div > button:hover,
+	.tox-editor-header div > div > button:hover {
+		background-color: #444 !important;
+	}
+	
+	.tox *, .tox{
+		border-color: #666 !important;
+		outline-color: #666 !important;
+	}
+	
+	.tox-toolbar{
+		border-top-color: #bbb !important;
+	}
+		
+	.tox-collection__group{
+		background: #333 !important;
 	}
 	
 	.attachmentContainer {
@@ -1109,22 +1133,39 @@
 		background: url("data:image/svg+xml;charset=utf8,%3Csvg height='29px' viewBox='0 0 40 29px' width='40' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='28px' width='100' height='1' fill='%23cccccc'/%3E%3C/svg%3E") left 0 top 0 #666;
 	}
 
+	.tox-dialog * {
+		color: #FFF !important;
+	}
+	
+	.tox-listbox__select-chevron svg, .tox-collection__item-checkmark{
+		fill: #fff !important;
+	}
+	
+	.tox-collection__item {
+		color: #fff !important;
+		background: #333 !important;
+	}
+	
+	.tox-dialog-wrap__backdrop {
+		background: #222 !important;
+	}
+	
 	.mce-content-body {
 		color: #fff;
 	}
 
-	.msg_button:hover {
+	.msg_button:hover, .tox-button:hover {
 		color: #fff;
 		border-radius: 8px;
-		border: 1px solid #940;
-		background-color: #333;
+		border: 1px solid #940 !important;
+		background-color: #333 !important;
 	}
 
-	.msg_button {
+	.msg_button, .tox-button {
 		color: #fff;
-		border-radius: 8px;
-		border: 1px solid #666;
-		background-color: #222;
+		border-radius: 8px !important;
+		border: 1px solid #666 !important;
+		background-color: #222 !important;
 	}
 
 	#nrRecipients_mainacc , .nr_recipients_bubble{
