@@ -1,7 +1,7 @@
 /* ==UserStyle==
-@name		Smartschool Darkmode
+@name			Smartschool Darkmode
 @description  	A smartschool theme
-@version     	0.1.2
+@version     	0.2.0
 @author       	Dario Busia
 @license      	MIT
 @preprocessor 	stylus
@@ -9,1425 +9,1134 @@
 @homepageURL   	https://github.com/Aisu-glitch/Smartschool-Darkmode/
 @supportURL		https://github.com/Aisu-glitch/Smartschool-Darkmode/issues
 @updateURL     	https://github.com/Aisu-glitch/Smartschool-Darkmode/raw/Master/Theme.user.css
+@var	color	TextColor 	"Select a 				text 		color" 	#fff
+@var	color	ACCColor	"Select a primary  		accent  	color" 	#940
+@var	color	ACC2Color	"Select a secondary 	accent 		color" 	#f40
+@var	color	BorderColor	"Select a 				border 		color" 	#666
+@var	color	BGColor 	"Select a primary 		background 	color" 	#222
+@var	color	BG2Color 	"Select a secondary 	background 	color" 	#333
+@var	color	BG3Color 	"Select a tertiary 		background 	color" 	#444
+@var	color	BG4Color 	"Select a quarternary 	background 	color"	#555
 ==/UserStyle== */
+@-moz-document url-prefix("https://sibbo.smartschool.be/") 
+	body.go .smsc-topnav nav
+	body.modern-ui.go .smsc-topnav nav
+	.topnav__btn-wrapper > button
+	.input-search
+	.smsc-topnav .topnav__btn:hover
+	.js-course-filters.course-btnbar > label 
+		background-color: BG2Color !important
+		color: ACC2Color !important
+	
+	.smscMain  
+		scrollbar-width: none
+	
+	.smsc-topnav 
+		.topnav__btn.topnav__btn--icon.topnav__btn--icon--search
+			background: url(https://sibbo.smartschool.be/smsc/svg/search_ic_white/search_ic_white_24x24.svg) !important
+			^[1]:hover
+				background: linear-gradient(0deg, rgba(153, 68, 0, 0.5) 0%, rgba(0, 0, 0, 0) 30%), url(https://sibbo.smartschool.be/smsc/svg/search_ic_white/search_ic_white_24x24.svg) !important
+		.topnav__btn.topnav__btn--icon.topnav__btn--icon--manual
+			background: url(https://sibbo.smartschool.be/smsc/svg/help_ic_white/help_ic_white_24x24.svg) !important
+			^[1]:hover
+				background: linear-gradient(0deg, rgba(153, 68, 0, 0.5) 0%, rgba(0, 0, 0, 0) 30%), url(https://sibbo.smartschool.be/smsc/svg/help_ic_white/help_ic_white_24x24.svg) !important
+		.topnav__btn.topnav__btn--icon.topnav__btn--icon--exit 
+			background: url(https://sibbo.smartschool.be/smsc/svg/exit_ic_white/exit_ic_white_24x24.svg) !important
+			^[1]:hover
+				background: linear-gradient(0deg, rgba(153, 68, 0, 0.5) 0%, rgba(0, 0, 0, 0) 30%), url(https://sibbo.smartschool.be/smsc/svg/exit_ic_white/exit_ic_white_24x24.svg) !important
+		.topnav__btn.topnav__btn--icon.topnav__btn--icon--exit:hover 
+		.topnav__btn.topnav__btn--icon.topnav__btn--icon--search
+		.topnav__btn.topnav__btn--icon.topnav__btn--icon--search:hover
+		.topnav__btn.topnav__btn--icon.topnav__btn--icon--manual
+		.topnav__btn.topnav__btn--icon.topnav__btn--icon--manual:hover
+		.topnav__btn.topnav__btn--icon.topnav__btn--icon--exit
+		.topnav__btn.topnav__btn--icon.topnav__btn--icon--exit:hover
+			background-repeat: no-repeat !important
+			background-position: 50% 50% !important
+		[data-notifs] .notifs__hdr [role="switch"] 
+			border: 1px solid ACCColor !important
+			background-color: BorderColor !important
+		.topnav__menuitem 
+			border: 1px solid ACCColor
+			margin-bottom: 3px
+			padding-left: 50px
+			background-position-x: 12px
+			> span 
+				color: TextColor !important
+		.topnav__menu 
+			background-color: BGColor
+			border-color: ACCColor
+		.topnav__btn 
+			transition: background-position 350ms, padding-bottom 350ms, line-height 350ms !important
+			background: linear-gradient(0deg, rgba(153, 68, 0, 0.5) 0%, rgba(0, 0, 0, 0) 30%) !important
+			background-position: 0px 10px !important
+			background-repeat: no-repeat !important
+			:hover 
+				padding-bottom: 13px !important
+				line-height: 35px !important
+		.topnav__badge 
+			border-color: ACC2Color!important
+	
+	.course-ico.course-ico--own 
+		border: none !important
+	
+	.topnav 
+		border-bottom: 1px solid ACCColor !important
+	
+	.modern-ui .smscButton 
+		text-decoration: none
+	
+	.input-search	.js-course-filters.course-btnbar 
+		background-color: BG2Color !important
+		border: 1px solid ACCColor !important
+	
+	.smsc-topnav .topnav__badge
+	.notification:hover
+	.modern-ui .smscButton:hover
+	.smsc-topnav :not(.topnav__menuitem--no-hover).topnav__menuitem:hover 
+		background-color: BorderColor !important
+		border-color: ACC2Color !important
+		color: ACC2Color
 
-@-moz-document url-prefix("https://sibbo.smartschool.be/") {
-	body.go .smsc-topnav nav,
-	body.modern-ui.go .smsc-topnav nav,
-	.topnav__btn-wrapper > button,
-	.input-search,
-	.smsc-topnav .topnav__btn:hover,
-	.js-course-filters.course-btnbar > label {
-		background-color: #333 !important;
-		color: #f40 !important;
-	}
+	.js-btn-messages.topnav__btn
+	.js-btn-home.topnav__btn.topnav__btn--push-right 
+		background-color: BG2Color !important
+		color: ACC2Color
 	
-	.smscMain  {
-		scrollbar-width: none;
-	}
+	.topnav__menu-arrow
+		^[0]::after 
+			border-color: ACCColor transparent !important
+			top: 0px
+		^[0]::before
+			border: none !important
+			
+	.js-notif-close 
+		border-radius: 20px !important
+		background-color: BG2Color
 	
-	.smsc-topnav .topnav__btn.topnav__btn--icon.topnav__btn--icon--search {
-		background: url(https://sibbo.smartschool.be/smsc/svg/search_ic_white/search_ic_white_24x24.svg) !important;
+	.close-icon 
+		padding-right: 2px
+		padding-bottom: 1px
 		
-	}
-
-	.smsc-topnav .topnav__btn.topnav__btn--icon.topnav__btn--icon--manual {
-		background: url(https://sibbo.smartschool.be/smsc/svg/help_ic_white/help_ic_white_24x24.svg) !important;
-	}
-
-	.smsc-topnav .topnav__btn.topnav__btn--icon.topnav__btn--icon--exit {
-		background: url(https://sibbo.smartschool.be/smsc/svg/exit_ic_white/exit_ic_white_24x24.svg) !important;
-	}
-
-	.smsc-topnav .topnav__btn.topnav__btn--icon.topnav__btn--icon--search:hover {
-		background: linear-gradient(0deg, rgba(153, 68, 0, 0.5) 0%, rgba(0, 0, 0, 0) 30%), url(https://sibbo.smartschool.be/smsc/svg/search_ic_white/search_ic_white_24x24.svg) !important;
-	}
-
-	.smsc-topnav .topnav__btn.topnav__btn--icon.topnav__btn--icon--manual:hover {
-		background: linear-gradient(0deg, rgba(153, 68, 0, 0.5) 0%, rgba(0, 0, 0, 0) 30%), url(https://sibbo.smartschool.be/smsc/svg/help_ic_white/help_ic_white_24x24.svg) !important;
-	}
-
-	.smsc-topnav .topnav__btn.topnav__btn--icon.topnav__btn--icon--exit:hover {
-		background: linear-gradient(0deg, rgba(153, 68, 0, 0.5) 0%, rgba(0, 0, 0, 0) 30%), url(https://sibbo.smartschool.be/smsc/svg/exit_ic_white/exit_ic_white_24x24.svg) !important;
-	}
+	.notification__content 
+		overflow-x: hidden
 	
-	.smsc-topnav .topnav__btn.topnav__btn--icon.topnav__btn--icon--search,
-	.smsc-topnav .topnav__btn.topnav__btn--icon.topnav__btn--icon--search:hover,
-	.smsc-topnav .topnav__btn.topnav__btn--icon.topnav__btn--icon--manual,
-	.smsc-topnav .topnav__btn.topnav__btn--icon.topnav__btn--icon--manual:hover,
-	.smsc-topnav .topnav__btn.topnav__btn--icon.topnav__btn--icon--exit,
-	.smsc-topnav .topnav__btn.topnav__btn--icon.topnav__btn--icon--exit:hover{
-		background-repeat: no-repeat !important;
-		background-position: 50% 50% !important;
-	}
+	.notification__btn 
+		max-width: 561.417px !important
 	
-	.course-ico.course-ico--own {
-		border: none !important;
-	}
-
-	.topnav {
-		border-bottom: 1px solid #940 !important;
-	}
-
-	.modern-ui .smscButton {
-		text-decoration: none;
-	}
-
-	.input-search,
-	.js-course-filters.course-btnbar {
-		background-color: #333 !important;
-		border: 1px solid #940 !important;
-	}
-
-	.smsc-topnav .topnav__badge,
-	.notification:hover,
-	.modern-ui .smscButton:hover,
-	.smsc-topnav :not(.topnav__menuitem--no-hover).topnav__menuitem:hover {
-		background-color: #666 !important;
-		border-color: #f40 !important;
-		color: #f40;
-	}
-
-	.smsc-topnav .topnav__btn:hover {
-		padding-bottom: 13px !important;
-		line-height: 35px !important;
-	}
-	.js-btn-messages.topnav__btn,
-	.js-btn-home.topnav__btn.topnav__btn--push-right {
-		background-color: #333 !important;
-		color: #f40;
-	}
-
-	.topnav__menu-arrow::after {
-		border-color: #940 transparent !important;
-		top: 0px
-	}
-
-	.topnav__menu-arrow::before{
-		border: none !important;
-	}
+	.notification:hover .js-notif-close
+		border: 1px solid ACCColor
+		.close-icon 
+			padding-right: 4px
+			padding-bottom: 3px
 	
-	.js-notif-close {
-		border-radius: 20px !important;
-		background-color: #333;
-	}
-
-	.close-icon {
-		padding-right: 2px;
-		padding-bottom: 1px;
-	}
-
-	.notification:hover .js-notif-close .close-icon {
-		padding-right: 4px;
-		padding-bottom: 3px;
-	}
-
-	.notification__content {
-		overflow-x: hidden;
-	}
-
-	.notification__btn {
-		max-width: 561.417px !important;
-	}
-
-	.notification:hover .js-notif-close {
-		border: 1px solid #940;
-	}
-
-	.menu-divider::before,
-	.title--3::after {
-		background: #666 !important;
-	}
-
-	.smsc-topnav .topnav__badge {
-		border-color: #F40!important;
-	}
-
-	.smsc-topnav [data-notifs] .notifs__hdr [role="switch"] {
-		border: 1px solid #940 !important;
-		background-color: #666 !important;
-	}
-
-	[role="switch"][aria-checked="false"] :first-child,
-	[role="switch"][aria-checked="true"] :last-child {
-		background: #333 !important;
-		color: #940 !important;
-	}
-
-	[role="switch"][aria-checked="false"] :last-child,
-	[role="switch"][aria-checked="true"] :first-child {
-		color: #333 !important;
-		background-color: #940 !important;
-	}
-
-	.smsc-topnav .topnav__btn {
-		transition: background-position 350ms, padding-bottom 350ms, line-height 350ms !important;
-		background: linear-gradient(0deg, rgba(153, 68, 0, 0.5) 0%, rgba(0, 0, 0, 0) 30%) !important;
-		background-position: 0px 10px !important;
-		background-repeat: no-repeat !important;
-	}
-
-	.topnav__btn:hover {
-		border-bottom: none !important;
-		background-position: 0px 0px !important;
-	}
-
-	.notification__content > span,
-	.topnav__menuitem,
-	#topnavCoursesTitle {
-		color: #fff !important;
-	}
-
-	.notifs__hdr,
-	.notification {
-		border-color: #666 !important;
-	}
-
-	.smsc-topnav .topnav__menuitem > span {
-		color: #fff !important;
-	}
-
-	.smsc-topnav .topnav__menuitem {
-		border: 1px solid #940;
-		margin-bottom: 3px;
-		padding-left: 50px;
-		background-position-x: 12px;
-	}
-
-	.input-search:focus {
-		box-shadow: none !important;
-	}
-
-	.smsc-topnav .topnav__menu {
-		background-color: #222;
-		border-color: #940
-	}
-
-	#notificationToaster {
-		background-color: #0000;
-		color: #fff;
-	}
-
-	.notifs-toaster__toast {
-		border-color: #940;
-	}
-
-	#notificationToaster *,
-	.smsc-topnav .topnav__btn *,
-	.topnav__btn-wrapper {
-		background-color: #333 !important;
-	}
+	.menu-divider::before
+	.title--3::after 
+		background: BorderColor !important
+	
+	[role="switch"][aria-checked="false"] :first-child
+	[role="switch"][aria-checked="true"] :last-child 
+		background: BG2Color !important
+		color: ACCColor !important
+	
+	[role="switch"][aria-checked="false"] :last-child
+	[role="switch"][aria-checked="true"] :first-child 
+		color: BG2Color !important
+		background-color: ACCColor !important
+	
+	.topnav__btn:hover 
+		border-bottom: none !important
+		background-position: 0px 0px !important
+	
+	.notification__content > span
+	.topnav__menuitem
+	#topnavCoursesTitle 
+		color: TextColor !important
+	
+	.notifs__hdr
+	.notification 
+		border-color: BorderColor !important
+	
+	.smsc-topnav
+		
+	
+	.input-search:focus 
+		box-shadow: none !important
+		
+	
+	#notificationToaster 
+		background-color: #0000
+		color: TextColor
+	
+	.notifs-toaster__toast 
+		border-color: ACCColor
+	
+	#notificationToaster *
+	.smsc-topnav .topnav__btn *
+	.topnav__btn-wrapper 
+		background-color: BG2Color !important
+	
 	/*------------------------------------------------------------------------------------*/
-	.go {
-		background-color: #222;
-	}
-}
-
-@-moz-document url("https://sibbo.smartschool.be/login") {
-	.go .login-app__platform-indicator {
-		background: none !important;
-	}
+	.go 
+		background-color: BGColor
 	
-	.js-focus-visible{
-		overflow-y: hidden;
-	}
+@-moz-document url("https://sibbo.smartschool.be/login") 
+	.go .login-app__platform-indicator 
+		background: none !important
 	
-	#smartschoolAppLinkWebsitem,
-	.modern-ui .float-label__input + label > span {
-		color: #fff;
-	}
-
-	.js-hero-image{
-		background-image: url(https://vjloopsfarm.com/wp-content/uploads/2019/05/Red-Keter-sequence-patterns.-4k.-Abstract-multicolored-motion-graphics-background.-VJ-Loop-LIMEART_003.jpg) !important;
-		filter: blur(2px) brightness(70%) contrast(90%);
-	}
-
-	.login-app__container {
-		background-color: #2229;
-		justify-content: center !important;
-	}
+	.js-focus-visible
+		overflow-y: hidden
 	
-	.login-app__right {
-		overflow: visible;
-		position:  absolute;
-		background: #1D1C1DE0;
-		box-shadow: 0px 0px 150px 300px #1D1C1D;
-		transform: translate(50%, -50%);
-		max-width: none !important;
-		width: 1px !important; 
-		border-radius: 50% !important;
-		min-height: 0px !important;
-		height: 150px;
-		min-width: 0% !important;
-		right: 50%;
-		top: 50%;
-	}
+	#smartschoolAppLinkWebsitem
+	.modern-ui .float-label__input + label > span 
+		color: TextColor
+	
+	.js-hero-image
+		background-image: url(https://vjloopsfarm.com/wp-content/uploads/2019/05/Red-Keter-sequence-patterns.-4k.-Abstract-multicolored-motion-graphics-background.-VJ-Loop-LIMEART_003.jpg) !important
+		filter: blur(2px) brightness(70%) contrast(90%)
 
-	.login-app__top{
-		position:absolute;
-		transform: translate(-50%);
-		align-content: center;
+	.login-app__
+		&top
+			position:absolute
+			transform: translate(-50%)
+			align-content: center
+		&school-logo 
+			width: 96px
+			background-image: url(https://sibbo.smartschool.be/smsc/svg/logo_smartschool/logo_smartschool_16x16.svg) !important
+		&smartschool-app 
+			display: none
+		&form 
+			margin-bottom: none !important
+		&platform-indicator 
+			display: none
+		&right 
+			overflow: visible
+			position:  absolute
+			background: #1D1C1DE0
+			box-shadow: 0px 0px 150px 300px #1D1C1D
+			transform: translate(50%, -50%)
+			max-width: none !important
+			width: 1px !important; 
+			border-radius: 50% !important
+			min-height: 0px !important
+			height: 150px
+			min-width: 0% !important
+			right: 50%
+			top: 50%
+			justify-content: center
+		&container 
+			background-color: BGColor9
+			justify-content: center !important
+
+	#login_form__username
+	#login_form__password
+	.modern-ui 
+		.smscButton.blue 
+			outline: none !important
+			background-color: BG2Color
+			color: TextColor
+			border-color: ACC2Color
+			margin-bottom: 0px !important
+			^[1]:hover:not([disabled]) 
+				background-color: BorderColor
+				color: TextColor
+@-moz-document url("https://sibbo.smartschool.be/") 
+	.datepicker__cell.datepicker--current-day .datepicker__cell__content
+	.datepicker__cell
+	body.modern-ui .homepage #homepage__block--news .news__feed__button__content--name-date
+	body.modern-ui .homepage .course__list .course__block__description
+	legend 
+		color: TextColor !important
+	
+	body.modern-ui .smscMain .smsc-container--left
+	.course__list 
+		overflow-y: scroll
+		-ms-overflow-style: none
+		scrollbar-width: none
+	
+	.smsc-topnav [data-notifs] .notification:hover 
+		background: BG2Color
+	
+	.datepicker--other-month-day 
+		color: BorderColor !important
+	
+	#smscMain 
+		background-color: BGColor
+		color: BorderColor !important
+	
+	body.modern-ui .homepage__block:not(:last-child)
+	.datepicker__cell.datepicker--current-day .datepicker__cell__content 
+		border-color: ACCColor !important
+	
+	.smsc-title--1 
+		color: ACC2Color !important
+	
+	.course__block__title
+	.news__feed__button__content--title
+	.datepicker--bold 
+		color: ACCColor
+	
+	#intradesk74auWLB7IRzJqo2Oz5HolcGrw
+	#intradeskk41ztU7ckLXPqltAxys2cht5g
+	a
+	a:hover 
+		color: TextColor
+		text-decoration: underline
+	
+	.smsc-contextmenu .menu-linkbutton 
+		color: TextColor
+		text-decoration: none
+		background-position-x: 5px
+		padding-left: 50px
+		padding-top: 5px
+		padding-bottom: 5px
+		width: 100%
+		^[0]:hover 
+			background-position-x: 4px
+			padding-left: 49px
+			padding-top: 4px
+			padding-bottom: 4px
+			border-radius: 5px
+			border: 1px solid ACCColor
+		^[0]:not(:last-child) 
+			margin-bottom: 5px
+	
+	#homeAgenda .datepicker__cell__content:not(.datepicker--bold):hover
+	body.modern-ui .homepage .course__list .course__image:hover 
+		background-color: BG2Color !important
+		background-repeat: no-repeat
+		border-color: ACC2Color !important
+		color: ACC2Color
+	
+	#googleQuery
+	.smscButton
+	.grey
+	#bibnetQuery
+	#courseSearch 
+		background-color: BG2Color !important
+		color: TextColor !important
+		border-color: ACCColor !important
+		box-shadow: none
+	
+	.smsc-topnav .topnav__menu 
+		background-color: BGColor
+		border-color: ACCColor
+	
+	.topnav__menuitem.topnav__menuitem--img
+	.topnav__menuitem.topnav__menuitem--icon.topnav__menuitem--icon--notifs
+	.news__feed:hover 
+		background-color: BG2Color !important
+		border-radius: 5px !important
+		border: 1px solid ACCColor !important
+	
+	.news__feed
+		^[0]:hover 
+			border-color: ACC2Color !important
+			margin-bottom: 13.996px !important
+			.news__feed__button 
+				background-position-x: 4px !important
+				background-position-y: 6px !important
+	
+	.topnav__menuitem.topnav__menuitem--img 
+		padding-left: 10px
+	
+	.topnav__menuitem.topnav__menuitem--icon.topnav__menuitem--icon--notifs 
+		background-position-x: 10px
+		padding-left: 50px !important
+	
+	#centercontainer 
+		border-color: ACCColor !important
+	
+	.smsc-contextmenu-arrow
+		::after
+		::before 
+			border-color: ACCColor transparent !important
+	
+	.topnav__menu-arrow 
+		top: 37px !important
+	
+	.smsc-contextmenu-bubble 
+		background-color: BG2Color !important
+		border-color: ACCColor !important
+	
+	.news__feed__button 
+		transition: background 150ms
+		width: 100%
+	
+	.ui-widget-content,.ui-dialog, .ui-dialog-titlebar 
+		background-color: BG2Color
+		border-color: BorderColor !important
+	
+	.ui-dialog-titlebar
+		border: none
+	
+	.newsDialog__center
+		color: TextColor
+	
+@-moz-document url-prefix("https://sibbo.smartschool.be/conference/") 
+	:root 
+		--color-success: #00957c !important
+		--color-black: ACCColor !important
+		--color-primary: ACCColor !important
+		--user-list-bg: BGColor !important
+		--item-focus-border: BorderColor !important
+		--color-white: BGColor !important
+	
+	#smscMain 
+		background-color: BGColor !important
+		padding-top: 12px
+		* 
+			border: none
+	
+	#smscleftnav 
+		top: 56px !important
+	
+	.smscleftnavcontainer 
+		background-color: BG2Color !important
+		box-shadow: none !important
+		border: 1px solid BorderColor !important
+	
+	.smsc-column-nav__button 
+		color: TextColor !important
+		:hover 
+			border-radius: 5px
+			border-collapse: separate
+			background-color: BorderColor !important
+			border: 1px solid ACCColor !important
+	
+	.live__page 
+		background-color: BG2Color !important
+		box-shadow: none !important
+		border: 1px solid BorderColor !important
+		* 
+			color: TextColor
+	
+	.live__quick-nav
+	.media--qsqlj
+	.userList--Z2q1D0p
+	.scrollableList--Z2s6Her
+	.active--Z1SuO2X
+	.messageList--hsNac 
+		background: BGColor !important
+		border-color: BorderColor !important
+	
+	.live__btn
+	.smallTitle--2wz4kP
+	.systemMessage--ZYspJQ
+	.input--2wilPX 
+		color: TextColor !important
+	
+	.systemMessage--ZYspJQ
+	.input--2wilPX 
+		background: BG2Color !important
+		border-color: BorderColor !important
+	
+	.userlistPad--o5KDX 
+		background: BorderColor !important
+	
+@-moz-document url-prefix("https://sibbo.smartschool.be/index.php?module=News"), url-prefix("https://sibbo.smartschool.be/Documents/"), url-prefix("https://sibbo.smartschool.be/Weblinks/"), url-prefix("https://sibbo.smartschool.be/Tasks/"), url-prefix("https://sibbo.smartschool.be/index.php?module=Exercises"), url-prefix("https://sibbo.smartschool.be/Classmates/") 
+	#smscMain 
+		background-color: BGColor !important
+		padding-top: 12px
+		* 
+			border: none
+	
+	.smscleftnavcontainer 
+		background-color: BG2Color !important
+		box-shadow: none !important
+		border: 1px solid BorderColor !important
+	
+	.smsc-column-nav__button 
+		color: TextColor !important
+		^[0]:hover 
+			border-radius: 5px
+			border-collapse: separate
+			background-color: BorderColor !important
+			border: 1px solid ACCColor !important
+	
+	.margin-top--milli 
+		background: BG2Color
+		border-radius: 15px !important
+		border: 1px solid BorderColor !important
+		border-collapse: separate
+		* 
+			background: none
+			background-repeat: no-repeat
+			background-position: 5px center
+			color: TextColor
+	
+	.breadcrumb_url a 
+		color: TextColor
+	
+	.smsc_cm_body_row:hover 
+		background-color: BorderColor
+		border-radius: 5px
+		border-collapse: separate
+		border: 1px solid ACCColor !important
+	
+	.smsc_cm_link:hover 
+		text-decoration: none !important
+		color: TextColor
+	
+	.smscFrameTitle 
+		background: BorderColor !important
+		color: TextColor !important
+		box-shadow: none !important
+	
+	.smsc-linkbutton
+	.smsc-download__icon--download 
+		background-position: 0px center
+		background-image: url("https://static1.smart-school.net/smsc/svg/arrow_download_green_ic_action/arrow_download_green_ic_action_16x16.svg") !important
+	
+@-moz-document url-prefix("https://sibbo.smartschool.be/index.php?module=Uploadzone") 
+	#smscMain 
+		background-color: BGColor !important
+		padding-top: 12px
+		* 
+			border: none !important
+	
+	.smscleftnavcontainer 
+		background-color: BG2Color !important
+		border: 1px solid BorderColor !important
+		box-shadow: none !important
+	
+	.smsc-column-nav__button 
+		color: TextColor !important
+		^[0]:hover 
+			background-color: BorderColor !important
+			border: 1px solid ACCColor !important
+	
+	#uploadzone 
+		* 
+			background: none
+			color: TextColor !important
+		> tbody > tr > td > table 
+			border-collapse: separate !important
+			background: BG2Color !important
+			border-radius: 15px !important
+			border: 1px solid BorderColor !important
+	
+	#toolbar 
+		border-top-left-radius: 15px !important
+		border-bottom-left-radius: 15px !important
+		border: 1px solid BorderColor !important
+		margin-right: 2px !important
+		background: BG2Color !important
+	
+	.tree-classic
+		ul 
+			background-position: 6px 1px !important
+			background-repeat: repeat-y !important
+			background-image: url("data:image/gif;base64,R0lGODlhAgACAIAAAB4dGf///yH5BAEAAAEALAAAAAACAAIAAAICRF4AOw==") !important
+		li
+			background-position: -64px -16px !important
+			background-repeat: no-repeat !important
+			background-image: url(https://sibbo.smartschool.be/includes/jQuery/plugins/jsTree/themes/classic/icons.png) !important
+			&.open 
+				background: url(https://sibbo.smartschool.be/includes/jQuery/plugins/jsTree/themes/classic/icons.png) -32px -48px no-repeat !important
+			&.closed 
+				background: url(https://sibbo.smartschool.be/includes/jQuery/plugins/jsTree/themes/classic/icons.png) -48px -32px no-repeat !important
+
+	.toolbar
+		.resize-handle 
+			background-image: url(https://sibbo.smartschool.be/themes/default/images/toolbar/tbarsplit.png) !important
+		.new-file .icon 
+			background-image: url(https://sibbo.smartschool.be/smsc/img/add2/add2_24x24.png) !important
+		.new-file .icon
+		.resize-handle 
+			background-repeat: no-repeat !important
+			background-position: center center !important
+	
+	.smscFrameTitle 
+		background-color: BorderColor !important
+		box-shadow: none !important
+	
+	.fileuploadblock
+	.fileinfogrey
+	.correctioninfo 
+		background-color: BorderColor !important
+		border-radius: 8px
+	
+	.correctionline 
+		background-color: BG4Color !important
+	
+	#formval_omschrijving 
+		background-color: BG2Color !important
+	
+	.smscButton
+		&.blue 
+			background-color: BG2Color !important
+		^[0]:hover 
+			border: 1px solid ACCColor !important
+	
+@-moz-document url-prefix("https://sibbo.smartschool.be/Upload") 
+	body.modern-ui
+	.go * 
+		background-color: BGColor
+		color: TextColor !important
+	
+	.smsc-tabslist__item
+	.smsc-table__header:hover
+	.smsc-table__row:hover
+	.modern-ui .smsc-table__header 
+		background: BGColor !important
+	
+	.smsc-tabslist__item
+		^[0]::before
+		^[0]::after 
+			display: none
+	
+	.smsc-tabslist__item a 
+		text-shadow: none
+	
+	.modern-ui
+		.smscButton
+		.smscButton:hover 
+			background: BG2Color
+		.smscButton.blue 
+			border-color: BorderColor
+	
+@-moz-document url-prefix("https://sibbo.smartschool.be/index.php?module=Forum") 
+	#smscMain 
+		background-color: BGColor !important
+		padding-top: 12px
+		* 
+			border: none
+	
+	.smscleftnavcontainer 
+		background-color: BG2Color !important
+		box-shadow: none !important
+		border: 1px solid BorderColor !important
+	
+	.smsc-column-nav__button 
+		color: TextColor !important
+		^[0]:hover 
+			border-radius: 5px
+			border-collapse: separate
+			background-color: BorderColor !important
+			border: 1px solid ACCColor !important
+	
+@-moz-document url-prefix("https://sibbo.smartschool.be/index.php?module=Wiki") 
+	#smscMain 
+		background-color: BGColor !important
+		padding-top: 12px
+		* 
+			border: none
+	
+	.smscleftnavcontainer 
+		background-color: BG2Color !important
+		box-shadow: none !important
+		border: 1px solid BorderColor !important
+	
+	.smsc-column-nav__button 
+		color: TextColor !important
+		^[0]:hover 
+			border-radius: 5px
+			border-collapse: separate
+			background-color: BorderColor !important
+			border: 1px solid ACCColor !important
+	
+@-moz-document url-prefix("https://sibbo.smartschool.be/index.php?module=Messages") 
+	.go * 
+		color: TextColor
+	
+	.ui-widget-content
+		background-color: BGColor
+		border-color: BorderColor
 		
-	}
+	.attachment__title__label 
+		color: TextColor !important
 	
-	.login-app__school-logo {
-		width: 96px;
-		background-image: url(https://sibbo.smartschool.be/smsc/svg/logo_smartschool/logo_smartschool_16x16.svg) !important;
-	}
-
-	.login-app__smartschool-app {
-		display: none;
-	}
-
-	#login_form__username,
-	#login_form__password,
-	.modern-ui .smscButton.blue {
-		outline: none !important;
-		background-color: #333;
-		color: #fff;
-	}
-
-	.modern-ui .smscButton.blue:hover:not([disabled]) {
-		background-color: #666;
-		color: #fff;
-	}
-
-	.modern-ui .smscButton.blue,
-	.modern-ui .smscButton.blue:hover:not([disabled]) {
-		border-color: #f40;
-		margin-bottom: 0px !important;
-	}
-
-	.login-app__right {
-		justify-content: center;
-	}
-
-	.login-app__form {
-		margin-bottom: none !important;
-	}
-
-	.login-app__platform-indicator {
-		display: none;
-	}
-}
-
-@-moz-document url("https://sibbo.smartschool.be/") {
-	.datepicker__cell.datepicker--current-day .datepicker__cell__content,
-	.datepicker__cell,
-	body.modern-ui .homepage #homepage__block--news .news__feed__button__content--name-date,
-	body.modern-ui .homepage .course__list .course__block__description,
-	legend {
-		color: #fff !important;
-	}
-
-	body.modern-ui .smscMain .smsc-container--left,
-	.course__list {
-		overflow-y: scroll;
-		-ms-overflow-style: none;
-		scrollbar-width: none;
-	}
-
-	.smsc-topnav [data-notifs] .notification:hover {
-		background: #333;
-	}
-
-	.datepicker--other-month-day {
-		color: #666 !important;
-	}
-
-	#smscMain {
-		background-color: #222;
-		color: #666 !important;
-	}
-
-	body.modern-ui .homepage__block:not(:last-child),
-	.datepicker__cell.datepicker--current-day .datepicker__cell__content {
-		border-color: #940 !important;
-	}
-
-	.smsc-title--1 {
-		color: #f40 !important;
-	}
-
-	.course__block__title,
-	.news__feed__button__content--title,
-	.datepicker--bold {
-		color: #940;
-	}
-
-	#intradesk74auWLB7IRzJqo2Oz5HolcGrw,
-	#intradeskk41ztU7ckLXPqltAxys2cht5g,
-	a,
-	a:hover {
-		color: #fff;
-		text-decoration: underline;
-	}
-
-	.smsc-contextmenu .menu-linkbutton {
-		color: #fff;
-		text-decoration: none;
-		background-position-x: 5px;
-		padding-left: 50px;
-		padding-top: 5px;
-		padding-bottom: 5px;
-		width: 100%;
-	}
-
-	.smsc-contextmenu .menu-linkbutton:hover {
-		background-position-x: 4px;
-		padding-left: 49px;
-		padding-top: 4px;
-		padding-bottom: 4px;
-		border-radius: 5px;
-		border: 1px solid #940;
-	}
-
-	.smsc-contextmenu .menu-linkbutton:not(:last-child) {
-		margin-bottom: 5px;
-	}
-
-	#homeAgenda .datepicker__cell__content:not(.datepicker--bold):hover,
-	body.modern-ui .homepage .course__list .course__image:hover {
-		background-color: #333 !important;
-		background-repeat: no-repeat;
-		border-color: #f40 !important;
-		color: #f40;
-	}
-
-	#googleQuery,
-	.smscButton,
-	.grey,
-	#bibnetQuery,
-	#courseSearch {
-		background-color: #333 !important;
-		color: #fff !important;
-		border-color: #940 !important;
-		box-shadow: none;
-	}
-
-	.smsc-topnav .topnav__menu {
-		background-color: #222;
-		border-color: #940;
-	}
-
-	.topnav__menuitem.topnav__menuitem--img,
-	.topnav__menuitem.topnav__menuitem--icon.topnav__menuitem--icon--notifs,
-	.news__feed:hover {
-		background-color: #333 !important;
-		border-radius: 5px !important;
-		border: 1px solid #940 !important;
-	}
-
-	.news__feed:hover {
-		border-color: #f40 !important;
-		margin-bottom: 13.996px !important;
-	}
-
-	.news__feed:hover .news__feed__button {
-		background-position-x: 4px !important;
-		background-position-y: 6px !important;
-	}
-
-	.topnav__menuitem.topnav__menuitem--img {
-		padding-left: 10px;
-	}
-
-	.topnav__menuitem.topnav__menuitem--icon.topnav__menuitem--icon--notifs {
-		background-position-x: 10px;
-		padding-left: 50px !important;
-	}
-
-	#centercontainer {
-		border-color: #940 !important;
-	}
-
-	.smsc-contextmenu-arrow::after,
-	.smsc-contextmenu-arrow::before {
-		border-color: #940 transparent !important;
-	}
-
-	.topnav__menu-arrow {
-		top: 37px !important;
-	}
-
-	.smsc-contextmenu-bubble {
-		background-color: #333 !important;
-		border-color: #940 !important;
-	}
-
-	.news__feed__button {
-		transition: background 150ms;
-		width: 100%;
-	}
-
-	.ui-widget-content,.ui-dialog, .ui-dialog-titlebar {
-		background-color: #333;
-		border-color: #666 !important;
-	}
-
-	.ui-dialog-titlebar{
-		border: none;
-	}
-
-	.newsDialog__center{
-		color: #FFF;
-	}
-}
-
-@-moz-document url-prefix("https://sibbo.smartschool.be/conference/") {
-	:root {
-		--color-success: #00957c !important;
-		--color-black: #940 !important;
-		--color-primary: #940 !important;
-		--user-list-bg: #222 !important;
-		--item-focus-border: #666 !important;
-		--color-white: #222 !important;
-	}
-
-	#smscMain {
-		background-color: #222 !important;
-		padding-top: 12px;
-	}
-
-	#smscMain * {
-		border: none;
-	}
-
-	#smscleftnav {
-		top: 56px !important;
-	}
-
-	.smscleftnavcontainer {
-		background-color: #333 !important;
-		box-shadow: none !important;
-		border: 1px solid #666 !important;
-	}
-
-	.smsc-column-nav__button {
-		color: #fff !important;
-	}
-
-	.smsc-column-nav__button:hover {
-		border-radius: 5px;
-		border-collapse: separate;
-		background-color: #666 !important;
-		border: 1px solid #940 !important;
-	}
-
-	.live__page {
-		background-color: #333 !important;
-		box-shadow: none !important;
-		border: 1px solid #666 !important;
-	}
-
-	.live__page * {
-		color: #fff;
-	}
-
-	.live__quick-nav,
-	.media--qsqlj,
-	.userList--Z2q1D0p,
-	.scrollableList--Z2s6Her,
-	.active--Z1SuO2X,
-	.messageList--hsNac {
-		background: #222 !important;
-		border-color: #666 !important;
-	}
-
-	.live__btn,
-	.smallTitle--2wz4kP,
-	.systemMessage--ZYspJQ,
-	.input--2wilPX {
-		color: #fff !important;
-	}
-
-	.systemMessage--ZYspJQ,
-	.input--2wilPX {
-		background: #333 !important;
-		border-color: #666 !important;
-	}
-
-	.userlistPad--o5KDX {
-		background: #666 !important;
-	}
-}
-
-@-moz-document url-prefix("https://sibbo.smartschool.be/index.php?module=News"), url-prefix("https://sibbo.smartschool.be/Documents/"), url-prefix("https://sibbo.smartschool.be/Weblinks/"), url-prefix("https://sibbo.smartschool.be/Tasks/"), url-prefix("https://sibbo.smartschool.be/index.php?module=Exercises"), url-prefix("https://sibbo.smartschool.be/Classmates/") {
-	#smscMain {
-		background-color: #222 !important;
-		padding-top: 12px;
-	}
-
-	#smscMain * {
-		border: none;
-	}
-
-	.smscleftnavcontainer {
-		background-color: #333 !important;
-		box-shadow: none !important;
-		border: 1px solid #666 !important;
-	}
-
-	.smsc-column-nav__button {
-		color: #fff !important;
-	}
-
-	.smsc-column-nav__button:hover {
-		border-radius: 5px;
-		border-collapse: separate;
-		background-color: #666 !important;
-		border: 1px solid #940 !important;
-	}
-
-	.margin-top--milli * {
-		background: none;
-		background-repeat: no-repeat;
-		background-position: 5px center;
-		color: #fff;
-	}
-
-	.margin-top--milli {
-		background: #333;
-		border-radius: 15px !important;
-		border: 1px solid #666 !important;
-		border-collapse: separate;
-	}
-
-	.breadcrumb_url a {
-		color: #fff;
-	}
-
-	.smsc_cm_body_row:hover {
-		background-color: #666;
-		border-radius: 5px;
-		border-collapse: separate;
-		border: 1px solid #940 !important;
-	}
-
-	.smsc_cm_link:hover {
-		text-decoration: none !important;
-		color: #fff;
-	}
-
-	.smscFrameTitle {
-		background: #666 !important;
-		color: #fff !important;
-		box-shadow: none !important;
-	}
-
-	.smsc-linkbutton,
-	.smsc-download__icon--download {
-		background-position: 0px center;
-		background-image: url("https://static1.smart-school.net/smsc/svg/arrow_download_green_ic_action/arrow_download_green_ic_action_16x16.svg") !important;
-	}
-}
-
-@-moz-document url-prefix("https://sibbo.smartschool.be/index.php?module=Uploadzone") {
-	#smscMain {
-		background-color: #222 !important;
-		padding-top: 12px;
-	}
-
-	#smscMain * {
-		border: none !important;
-	}
-
-	.smscleftnavcontainer {
-		background-color: #333 !important;
-		border: 1px solid #666 !important;
-		box-shadow: none !important;
-	}
-
-	.smsc-column-nav__button {
-		color: #fff !important;
-	}
-
-	.smsc-column-nav__button:hover {
-		background-color: #666 !important;
-		border: 1px solid #940 !important;
-	}
-
-	#uploadzone * {
-		background: none;
-		color: #fff !important;
-	}
-
-	#uploadzone > tbody > tr > td > table {
-		border-collapse: separate !important;
-		background: #333 !important;
-		border-radius: 15px !important;
-		border: 1px solid #666 !important;
-	}
-
-	#toolbar {
-		border-top-left-radius: 15px !important;
-		border-bottom-left-radius: 15px !important;
-		border: 1px solid #666 !important;
-		margin-right: 2px !important;
-		background: #333 !important;
-	}
-
-	.tree-classic ul {
-		background-position: 6px 1px !important;
-		background-repeat: repeat-y !important;
-		background-image: url("data:image/gif;base64,R0lGODlhAgACAIAAAB4dGf///yH5BAEAAAEALAAAAAACAAIAAAICRF4AOw==") !important;
-	}
-
-	.tree-classic li.open {
-		background: url(https://sibbo.smartschool.be/includes/jQuery/plugins/jsTree/themes/classic/icons.png) -32px -48px no-repeat !important;
-	}
-
-	.tree-classic li.closed {
-		background: url(https://sibbo.smartschool.be/includes/jQuery/plugins/jsTree/themes/classic/icons.png) -48px -32px no-repeat !important;
-	}
-
-	.tree-classic li {
-		background-position: -64px -16px !important;
-		background-repeat: no-repeat !important;
-		background-image: url(https://sibbo.smartschool.be/includes/jQuery/plugins/jsTree/themes/classic/icons.png) !important;
-	}
-
-	.toolbar .resize-handle {
-		background-image: url(https://sibbo.smartschool.be/themes/default/images/toolbar/tbarsplit.png) !important;
-	}
-
-	.toolbar .new-file .icon {
-		background-image: url(https://sibbo.smartschool.be/smsc/img/add2/add2_24x24.png) !important;
-	}
-
-	.toolbar .new-file .icon,
-	.toolbar .resize-handle {
-		background-repeat: no-repeat !important;
-		background-position: center center !important;
-	}
-
-	.smscFrameTitle {
-		background-color: #666 !important;
-		box-shadow: none !important;
-	}
-
-	.fileuploadblock,
-	.fileinfogrey,
-	.correctioninfo {
-		background-color: #666 !important;
-		border-radius: 8px;
-	}
-
-	.correctionline {
-		background-color: #555 !important;
-	}
-
-	#formval_omschrijving {
-		background-color: #333 !important;
-	}
-
-	.smscButton.blue {
-		background-color: #333 !important;
-	}
-
-	.smscButton:hover {
-		border: 1px solid #940 !important;
-	}
-}
-
-@-moz-document url-prefix("https://sibbo.smartschool.be/Upload") {
-	body.modern-ui,
-	.go * {
-		background-color: #222;
-		color: #fff !important;
-	}
-	.smsc-tabslist__item,
-	.smsc-table__header:hover,
-	.smsc-table__row:hover,
-	.modern-ui .smsc-table__header {
-		background: #222 !important;
-	}
-	.smsc-tabslist__item::before,
-	.smsc-tabslist__item::after {
-		display: none;
-	}
-	.smsc-tabslist__item a {
-		text-shadow: none;
-	}
-	.modern-ui .smscButton,
-	.modern-ui .smscButton:hover {
-		background: #333;
-	}
-	.smscButton.blue {
-		border-color: #666;
-	}
-}
-
-@-moz-document url-prefix("https://sibbo.smartschool.be/index.php?module=Forum") {
-	#smscMain {
-		background-color: #222 !important;
-		padding-top: 12px;
-	}
-
-	#smscMain * {
-		border: none;
-	}
-
-	.smscleftnavcontainer {
-		background-color: #333 !important;
-		box-shadow: none !important;
-		border: 1px solid #666 !important;
-	}
-
-	.smsc-column-nav__button {
-		color: #fff !important;
-	}
-
-	.smsc-column-nav__button:hover {
-		border-radius: 5px;
-		border-collapse: separate;
-		background-color: #666 !important;
-		border: 1px solid #940 !important;
-	}
-}
-
-@-moz-document url-prefix("https://sibbo.smartschool.be/index.php?module=Wiki") {
-	#smscMain {
-		background-color: #222 !important;
-		padding-top: 12px;
-	}
-
-	#smscMain * {
-		border: none;
-	}
-
-	.smscleftnavcontainer {
-		background-color: #333 !important;
-		box-shadow: none !important;
-		border: 1px solid #666 !important;
-	}
-
-	.smsc-column-nav__button {
-		color: #fff !important;
-	}
-
-	.smsc-column-nav__button:hover {
-		border-radius: 5px;
-		border-collapse: separate;
-		background-color: #666 !important;
-		border: 1px solid #940 !important;
-	}
-}
-
-@-moz-document url-prefix("https://sibbo.smartschool.be/index.php?module=Messages") {
-	.go * {
-		color: #fff;
-	}
-	.attachment__title__label {
-		color: #fff !important;
-	}
-	.folders {
-		width: 240px !important;
-	}
-
-	.msgcell__parent-td *,
-	#newltoptable,
-	.modmessages * {
-
-		background-color: #222;
-	}
-
-	#folders_parent_table *,
-	.toolbar,
-	#folders_parent_td {
-		background-color: #333;
-	}
-
-	.modern-ui .modern-message {
-		border-radius: 12px;
-		border: 1px solid #666;
-		margin-bottom: 2px;
-	}
-
-	.modern-ui .modern-message--selected,
-	.modern-ui .modern-message--selected:hover {
-		background-color: #666;
-		border-radius: 12px;
-		border-color: #f40;
-	}
-
-	.modern-ui .modern-message--selected * {
-		background-color: #666;
-	}
-
-	.modern-ui .modern-message:hover,
-	.modern-ui .modern-message:hover * {
-		background-color: #0000;
-		border-color: #940;
-	}
-
-	.smscButton {
-		background-color: #333 !important;
-		color: #fff !important;
-		border-color: #666 !important;
-	}
-
-	#sort_list_menu {
-		border-radius: 10px !important;
-	}
-
-	.smsc-contextmenu-arrow:before,
-	.smsc-contextmenu-arrow:after {
-		border-color: #940 transparent !important;
-	}
-
-	.smsc-contextmenu-bubble,
-	.smsc-contextmenu-bubble * {
-		border-color: #940 !important;
-		background-color: #333 !important;
-		color: #fff !important;
-	}
-
-	.list {
-		-ms-overflow-style: none !important;
-		scrollbar-width: none !important;
-	}
-
-	::-webkit-scrollbar {
-		display: none;
-	}
-
-	.toolbar * {
-		background-color: #0000;
-	}
-
-	.toolbar {
-		border-left: 1px solid #666;
-		border-right: 1px solid #666;
-	}
-	.msgContentVal > div,
-	.msgContentVal > div *,
-	.msgHeaderVal,
-	.msgSubject,
-	.msgcell__head__title {
-		color: #940 !important;
-	}
-	.toolbar::before,
-	.toolbar::after {
-		border-color: #666 !important;
-		background: linear-gradient(#666, #666) repeat-y !important;
-		background-size: 1px 1px !important;
-		background-position: center !important;
-	}
-	.modern-ui .modern-message__actions {
-		box-shadow: none !important;
-		background-color: #0000 !important;
-	}
-	.modern-message__action {
-		margin-left: 2px;
-	}
-
-	#msgdetail {
-		-ms-overflow-style: none !important;
-		scrollbar-width: none !important;
-	}
-
-	.modern-ui .msgcell__parent-td {
-		max-width: calc(100vw - 270px + 30px + 168px) !important;
-	}
-
-	#msgcell,
-	#msgcell * {
-		background-color: #333;
-	}
-
-	#msgcell p{
-		background: #333 !important;
-	}
+	.folders 
+		width: 240px !important
 	
-	#modmessages > tbody > tr {
-		width: 100% !important;
-	}
-
-	#newltoptable {
-		width: 100% !important;
-	}
-
-	#newltoptable #msgcell {
-		overflow: hidden hidden;
-		border-radius: 15px !important;
-		padding: 10px;
-	}
-
-	.msgcell__parent-td #msgcell {
-		overflow: hidden hidden;
-		border-radius: 15px !important;
-		padding: 10px;
-	}
-
-	.msgcell__parent-td .messageframe {
-		height: 98%;
-		overflow: hidden;
-	}
-
-	#newltoptable .messageframe {
-		height: 105%;
-	}
-
-	.modern-ui .context-menu {
-		background-color: #222;
-		border-radius: 8px;
-		border: 1px solid #666;
-		box-shadow: none !important;
-	}
-
-	.modmessages > tbody > tr > td:last-of-type {
-		width: 10px !important;
-	}
-	#msglist > div:last-of-type {
-		margin-bottom: 30px;
-	}
-
-	.ui-widget{
-		border-radius: 8px;
-		border: 1px solid #666 !important;
-		background: #333;
-	}
-
-	.message-search__wrapper {
-		background: #333;
-		border-bottom: none;
-	}
-
-	.message-search__select, .smsc-select-bubble{
-		background:  #444 !important;
-		border-color: #666 !important;
-		color: #fff;
-	}
-
-	.message-search__input, .message-search__input::placeholder{
-		border-radius: 4px;
-		border: 1px solid #666;
-		background: #444;
-		color: #fff !important;
-		outline: none;
-	}
-
-	.smsc-select-option.item:hover{
-		background: #555 !important;
-	}
-}
-
-@-moz-document url-prefix("https://sibbo.smartschool.be/index.php?module=Messages&file=composeMessage") {
-	.smscComposeMessage{
-		background-color: #222;
-		border: none;
-	}
+	.msgcell__parent-td *
+	#newltoptable
+	.modmessages * 
+		background-color: BGColor
 	
-	.ui-widget-header, .ui-dialog-buttonpane, .tabmain, .sjabl_input, .templateselectdiv{
-		background-color: #333;
-		border: none;
-	}
+	#folders_parent_table *
+	.toolbar
+	#folders_parent_td 
+		background-color: BG2Color
 	
-	.attachContainertitle{
-		padding-bottom: 1.333rem;
-		margin-bottom: 0 !important;
-	}
+	.modern-ui .modern-message 
+		border-radius: 12px
+		border: 1px solid BorderColor
+		margin-bottom: 2px
 	
-	.nr_recipients_left, .nr_recipients_main, .nr_recipients_right{
-		background: none;
-	}
+	.modern-ui
+		.modern-message--selected
+		.modern-message--selected:hover 
+			background-color: BorderColor
+			border-radius: 12px
+			border-color: ACC2Color
+		.modern-message--selected
+			* 
+				background-color: BorderColor
+		.modern-message:hover
+		.modern-message:hover * 
+			background-color: #0000
+			border-color: ACCColor
 	
-	.nr_recipients_bubble{
-		margin-left: 25px;
-		background: #333 !important;
-		border-radius: 12px;
-		border: 2px solid #666;
-	}
+	.smscButton 
+		background-color: BG2Color !important
+		color: TextColor !important
+		border-color: BorderColor !important
 	
-	.nr_recipients_main{
-		line-height: 24px;
-	}
+	#sort_list_menu 
+		border-radius: 10px !important
+	
+	.smsc-contextmenu-arrow
+		^[0]:before
+		^[0]:after 
+			border-color: ACCColor transparent !important
+	
+	.smsc-contextmenu-bubble
+	.smsc-contextmenu-bubble * 
+		border-color: ACCColor !important
+		background-color: BG2Color !important
+		color: TextColor !important
+	
+	.list 
+		-ms-overflow-style: none !important
+		scrollbar-width: none !important
+	
+	::-webkit-scrollbar 
+		display: none
+	
+	.toolbar 
+		border-left: 1px solid BorderColor
+		border-right: 1px solid BorderColor
+		* 
+			background-color: #0000
+	
+	.msgContentVal > div
+	.msgContentVal > div *
+	.msgHeaderVal
+	.msgSubject
+	.msgcell__head__title 
+		color: ACCColor !important
+	
+	.toolbar::before
+	.toolbar::after 
+		border-color: BorderColor !important
+		background: linear-gradient(BorderColor, BorderColor) repeat-y !important
+		background-size: 1px 1px !important
+		background-position: center !important
+	
+	.modern-ui
+		.modern-message__actions 
+			box-shadow: none !important
+			background-color: #0000 !important
+			margin-left: 2px
+		.msgcell__parent-td 
+			max-width: calc(100vw - 270px + 30px + 168px) !important
+		.context-menu 
+			background-color: BGColor
+			border-radius: 8px
+			border: 1px solid BorderColor
+			box-shadow: none !important
+	#msgdetail 
+		-ms-overflow-style: none !important
+		scrollbar-width: none !important
+	
+	#msgcell
+		background-color: BG2Color
+		* 
+			background-color: BG2Color
+		p
+			background: BG2Color !important
+	
+	
+	#modmessages
+		> tbody > tr 
+			width: 100% !important
+			> td:last-of-type 
+				width: 10px !important
+	
+	#newltoptable 
+		width: 100% !important
+		#msgcell 
+			overflow: hidden hidden
+			border-radius: 15px !important
+			padding: 10px
+		.messageframe 
+			height: 105%
+	
+	.msgcell__parent-td
+		#msgcell 
+			overflow: hidden hidden
+			border-radius: 15px !important
+			padding: 10px
+		.messageframe 
+			height: 98%
+			overflow: hidden
+	
+	#msglist > div:last-of-type 
+		margin-bottom: 30px
+	
+	.ui-widget
+		border-radius: 8px
+		border: 1px solid BorderColor !important
+		background: BG2Color
+	
+	.message-search__
+		&wrapper 
+			background: BG2Color
+			border-bottom: none
+		&input
+		&input::placeholder
+			border-radius: 4px
+			border: 1px solid BorderColor
+			background: BG3Color
+			color: TextColor !important
+			outline: none
+			
+	.message-search__select, .smsc-select-bubble
+		background:  BG3Color !important
+		border-color: BorderColor !important
+		color: TextColor
+	
+	.smsc-select-option.item:hover
+		background: BG4Color !important
+	
+@-moz-document url-prefix("https://sibbo.smartschool.be/index.php?module=Messages&file=composeMessage") 
+	.smscComposeMessage
+		background-color: BGColor
+		border: none
+	
+	
+	.ui-widget-header, .ui-dialog-buttonpane, .tabmain, .sjabl_input, .templateselectdiv
+		background-color: BG2Color
+		border: none
+	
+	
+	.attachContainertitle
+		padding-bottom: 1.333rem
+		margin-bottom: 0 !important
+	
+	
+	.nr_recipients_
+		&left
+		&main
+		&right
+			background: none
+		&bubble
+			margin-left: 25px
+			background: BG2Color !important
+			border-radius: 12px
+			border: 2px solid BorderColor
+		&main
+			line-height: 24px
+	
 		
 	
-	.searchDivResult.selected,
-	.searchDivResult,
-	.searchDivResult *{
-		background-color: #333;
-	}
-
-	.mainContainer > table > tbody > tr:nth-last-of-type(n+3) > td, .compose_value div, .compose_value input, .templateRow:hover, .smsc-dropzone{
-		background: none;
-		background-color: #444;
-	}
-
-	.compose-options {
-		margin-top: 8px !important;
-	}
-
-	.accswitchmain, .accswitchco{
-		background: #333;
-		border-top-left-radius: 12px;
-		border-top-right-radius: 12px;
-		height: 23px;
-		line-height: 24px;
-	}
-
-	.mbselected{
-		background: #444;
-	}
-
-	.receiverSpan{
-		background-repeat: none;
-	}
-
-	#searchDivContent {
-		background-color: #333;
-		border: 1px solid #666;
-	}
-
-	.receiverSpanName.user {
-		background-repeat: no-repeat;
-	}
-
-	#compose_editor * {
-		color: #fff;
-	}
-	.tox > div,
-	.tox-editor-header > div,
-	.tox-editor-header > div > div,
- 	.tox-edit-area__iframe,
-	.tox-dialog,
-	.tox-dialog__header,
-	.tox-dialog__footer{
-		background-color: #333 !important;
-	}
-	.tox-form input ,
-	.tox-form input *,
-	.tox-editor-header > div > button:hover,
-	.tox-editor-header div > div > button:hover {
-		background-color: #444 !important;
-	}
+	.searchDivResult.selected
+	.searchDivResult
+	.searchDivResult *
+		background-color: BG2Color
 	
-	.tox *, .tox{
-		border-color: #666 !important;
-		outline-color: #666 !important;
-	}
+	.mainContainer > table > tbody > tr:nth-last-of-type(n+3) > td, .compose_value div, .compose_value input, .templateRow:hover, .smsc-dropzone
+		background: none
+		background-color: BG3Color
 	
-	.tox-toolbar{
-		border-top-color: #bbb !important;
-	}
-		
-	.tox-collection__group{
-		background: #333 !important;
-	}
+	.compose-options 
+		margin-top: 8px !important
 	
-	.attachmentContainer {
-		height: auto;
-	}
+	.accswitchmain, .accswitchco
+		background: BG2Color
+		border-top-left-radius: 12px
+		border-top-right-radius: 12px
+		height: 23px
+		line-height: 24px
 	
-	.tox .tox-tbtn svg {
-		fill: #666;
-	}
-
-	.tox .tox-tbtn:hover svg {
-		fill: #fff;
-	}
-
-	.tox .tox-toolbar__group {
-		background: url("data:image/svg+xml;charset=utf8,%3Csvg height='29px' viewBox='0 0 40 29px' width='40' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='28px' width='100' height='1' fill='%23cccccc'/%3E%3C/svg%3E") left 0 top 0 #666;
-	}
-
-	.tox-dialog * {
-		color: #FFF !important;
-	}
+	.mbselected
+		background: BG3Color
 	
-	.tox-listbox__select-chevron svg, .tox-collection__item-checkmark{
-		fill: #fff !important;
-	}
+	.receiverSpan
+		background-repeat: none
 	
-	.tox-collection__item {
-		color: #fff !important;
-		background: #333 !important;
-	}
+	#searchDivContent 
+		background-color: BG2Color
+		border: 1px solid BorderColor
 	
-	.tox-dialog-wrap__backdrop {
-		background: #222 !important;
-	}
+	.receiverSpanName.user 
+		background-repeat: no-repeat
 	
-	.mce-content-body {
-		color: #fff;
-	}
+	#compose_editor * 
+		color: TextColor
+	
+	.tox > div
+	.tox-editor-header > div
+	.tox-editor-header > div > div
+	.tox-edit-area__iframe
+	.tox-dialog
+	.tox-dialog__header
+	.tox-dialog__footer
+		background-color: BG2Color !important
+	
+	.tox-form input 
+	.tox-form input *
+	.tox-editor-header > div > button:hover
+	.tox-editor-header div > div > button:hover 
+		background-color: BG3Color !important
+	
+	
+	.tox
+		border-color: BorderColor !important
+		outline-color: BorderColor !important
+		*
+			border-color: BorderColor !important
+			outline-color: BorderColor !important
+		.tox-tbtn
+			svg 
+				fill: BorderColor
+			^[1]:hover svg 
+				fill: TextColor
+		.tox-toolbar__group 
+			background: url("data:image/svg+xml;charset=utf8,%3Csvg height='29px' viewBox='0 0 40 29px' width='40' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='28px' width='100' height='1' fill='%23cccccc'/%3E%3C/svg%3E") left 0 top 0 BorderColor
+		&-toolbar
+			border-top-color: #bbb !important
+		&-collection__group
+			background: BG2Color !important
+		&-dialog * 
+			color: TextColor !important
+		&-listbox__select-chevron svg
+		&-collection__item-checkmark
+			fill: TextColor !important
+		&-collection__item 
+			color: TextColor !important
+			background: BG2Color !important
+		&-dialog-wrap__backdrop 
+			background: BGColor !important
+	
+	.attachmentContainer 
+		height: auto
 
-	.msg_button:hover, .tox-button:hover {
-		color: #fff;
-		border-radius: 8px;
-		border: 1px solid #940 !important;
-		background-color: #333 !important;
-	}
-
-	.msg_button, .tox-button {
-		color: #fff;
-		border-radius: 8px !important;
-		border: 1px solid #666 !important;
-		background-color: #222 !important;
-	}
-
-	#nrRecipients_mainacc , .nr_recipients_bubble{
-		background-color: #2220;
-		width: inherit;
-	}
-
-	#nrRecipients_mainacc * {
-		background-color: #3330;
-		height: 100%;
-	}
-
-	.receiverSpan.user {
-		color: #fff;
-		border-color: #666;
-		background-color: #333;
-	}
-
-	.receiverSpan.user * {
-		background-repeat: no-repeat;
-		background-color: #333;
-	}
-}
-
-@-moz-document url-prefix("https://sibbo.smartschool.be/index.php?module=Agenda") {
-	.go {
-		background-color: #222;
-	}
-
-	.navTitle {
-		color: #F40 !important;
-	}
-
-	.border {
-		background: none !important;
-	}
-
-	#infoFormWindow_contentDiv * {
-		color: #fff;
-	}
-
-	.menuContainer,
-	.leftContainer,
-	.rightContainer {
-		background: #333;
-		border-top-left-radius: 15px;
-		border-bottom-left-radius: 15px;
-		border: 1px solid #666;
-	}
-
-	.menuContainer {
-		width: 2.5% !important;
-	}
-
-	.leftContainer {
-		width: 80% !important;
-	}
-
-	.rightContainer {
-		width: 16.5% !important;
-	}
-
-	.border.centerxy {
-		border-right: none !important;
-	}
-
-	#menuContainerBottom,
-	#contentContainerTotal {
-		border: none !important;
-	}
-
-	.agenda_grid_content {
-		-ms-overflow-style: none;
-		scrollbar-width: none;
-	}
-
-	.leftContainer {
-		border-top-right-radius: 15px;
-		border-bottom-right-radius: 15px;
-	}
-
-	.rightContainer {
-		border-top-right-radius: 15px;
-		border-bottom-right-radius: 15px;
-		margin-right: 5px;
-	}
-
-	.agenda_grid_header_day,
-	.agenda_grid_hour_title > .agenda_grid_hour_p {
-		color: #940 !important;
-	}
-
-	.color_zilver {
-		background-color: #333;
-		border-color: #666;
-	}
-
-	.color_snow_white {
-		display: none;
-	}
-
-	.color_zilver:hover {
-		background-color: #666;
-		border-color: #940;
-	}
-
-	.agenda_grid_hour_p,
-	.agendaGridBlockContentLeft,
-	.tasksAndMaterials__blocks {
-		color: #fff;
-	}
-
-	::after {
-		display: none !important;
-	}
-
-	.tasksAndMaterials__day {
-		border-top: 1px solid #666;
-		padding-top: 5px;
-		margin-top: 0px;
-	}
-
-	.navigationContainer > table {
-		width: 82.5%;
-	}
-
-	.navTitle {
-		margin: 0px !important;
-		margin-left: 100px !important;
-	}
-
-	.hasDatepicker {
-		border-radius: 6px;
-		padding-left: 9px;
-		padding-right: 9px;
-		background-color: #333;
-		color: #fff;
-		border: 1px solid #666;
-	}
-
-	.tasksAndMaterials__blocks {
-		-ms-overflow-style: none;
-		scrollbar-width: none;
-	}
-
-	.tasksAndMaterials__title {
-		color: #940;
-	}
-
-	tasksAndMaterials-day:not(:last-child):not(:empty) {
-		margin-bottom: 5px;
-	}
-
-	.smscMain {
-		height: 100%;
-	}
-
-	.smscCheckbox > label {
-		color: #fff;
-	}
-
-	#contentContainerTotal,
-	#contentContainer,
-	.agenda_grid_days {
-		width: 100% !important;
-	}
-
-	#infoFormWindow {
-		background-color: #222;
-		color: #fff;
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-
-	#infoFormWindow_movableDiv > div.wborder.wbleft,
-	div.wborder.wbright {
-		display: none;
-	}
-
-	#infoFormWindow_titlebar {
-		width: 100% !important;
-		display: absolute !important;
-	}
-
-	#rightContainerBottom {
-		border: none;
-	}
-
-	.lessonFormTitleContainer {
-		color: #fff !important;
-	}
-
-	.tabs {
-		background-image: none !important;
-	}
-
-	.tabs li,
-	.tabs li.current {
-		color: #fff;
-		background: none;
-		background-color: #333;
-		border-radius: 5px;
-		border: 1px solid #666;
-	}
-
-	.tabs li.current {
-		background-color: #940;
-	}
-
-	.tabs li span {
-		background: none !important;
-	}
-
-	#infoContainerStudent {
-		border-radius: 5px;
-		border: 1px solid #666;
-		background-color: #444;
-		-ms-overflow-style: none !important;
-		scrollbar-width: none !important;
-	}
-
-	::-webkit-scrollbar {
-		display: none;
-	}
-
-	#infoContainerNoteContent {
-		color: #fff;
-		width: 100% !important;
-		height: 100% !important;
-		border: none;
-		background-color: #444;
-	}
-
-	#infoFormWindow_leftBorder {
-		display: none !important;
-	}
-
-	#infoFormWindow_contentDiv {
-		border-radius: 15px;
-		border: 1px solid #666;
-		background-color: #333 !important;
-		width: 100% !important;
-	}
-	#infoContainerAssignments, .infoContainerBlock {
-		background-color: #333 !important;
-	}
-
-	#infoContainerAssignments {
-		border-radius: 8px;
-		border: 1px solid #666
-	}
-
-	.infoContainerButton{
-		background: #333 !important;
-	}
-
-	.gradient_window {
-		border-radius: 15px;
-		border: 1px solid #940;
-	}
-
-	.wborder {
-		background-image: none !important;
-	}
-}
+	.mce-content-body 
+		color: TextColor
+	
+	.msg_button:hover, .tox-button:hover 
+		color: TextColor
+		border-radius: 8px
+		border: 1px solid ACCColor !important
+		background-color: BG2Color !important
+	
+	.msg_button, .tox-button 
+		color: TextColor
+		border-radius: 8px !important
+		border: 1px solid BorderColor !important
+		background-color: BGColor !important
+	
+	#nrRecipients_mainacc , .nr_recipients_bubble
+		background-color: BGColor0
+		width: inherit
+	
+	#nrRecipients_mainacc * 
+		background-color: BG2Color0
+		height: 100%
+	
+	.receiverSpan.user 
+		color: TextColor
+		border-color: BorderColor
+		background-color: BG2Color
+	
+	.receiverSpan.user * 
+		background-repeat: no-repeat
+		background-color: BG2Color
+	
+@-moz-document url-prefix("https://sibbo.smartschool.be/index.php?module=Agenda") 
+	.go 
+		background-color: BGColor
+	
+	.navTitle 
+		color: ACC2Color !important
+	
+	.border 
+		background: none !important
+	
+	#infoFormWindow_contentDiv * 
+		color: TextColor
+	
+	.menuContainer
+	.leftContainer
+	.rightContainer 
+		background: BG2Color
+		border-top-left-radius: 15px
+		border-bottom-left-radius: 15px
+		border: 1px solid BorderColor
+	
+	.menuContainer 
+		width: 2.5% !important
+	
+	.leftContainer 
+		width: 80% !important
+	
+	.rightContainer 
+		width: 16.5% !important
+	
+	.border.centerxy 
+		border-right: none !important
+	
+	#menuContainerBottom
+	#contentContainerTotal 
+		border: none !important
+	
+	.agenda_grid_content 
+		-ms-overflow-style: none
+		scrollbar-width: none
+	
+	.leftContainer 
+		border-top-right-radius: 15px
+		border-bottom-right-radius: 15px
+	
+	.rightContainer 
+		border-top-right-radius: 15px
+		border-bottom-right-radius: 15px
+		margin-right: 5px
+	
+	.agenda_grid_header_day
+	.agenda_grid_hour_title > .agenda_grid_hour_p 
+		color: ACCColor !important
+	
+	.color_zilver 
+		background-color: BG2Color
+		border-color: BorderColor
+	
+	.color_snow_white 
+		display: none
+	
+	.color_zilver:hover 
+		background-color: BorderColor
+		border-color: ACCColor
+	
+	.agenda_grid_hour_p
+	.agendaGridBlockContentLeft
+	.tasksAndMaterials__blocks 
+		color: TextColor
+	
+	::after 
+		display: none !important
+	
+	.tasksAndMaterials__day 
+		border-top: 1px solid BorderColor
+		padding-top: 5px
+		margin-top: 0px
+	
+	.navigationContainer > table 
+		width: 82.5%
+	
+	.navTitle 
+		margin: 0px !important
+		margin-left: 100px !important
+	
+	.hasDatepicker 
+		border-radius: 6px
+		padding-left: 9px
+		padding-right: 9px
+		background-color: BG2Color
+		color: TextColor
+		border: 1px solid BorderColor
+	
+	.tasksAndMaterials__blocks 
+		-ms-overflow-style: none
+		scrollbar-width: none
+	
+	.tasksAndMaterials__title 
+		color: ACCColor
+	
+	tasksAndMaterials-day:not(:last-child):not(:empty) 
+		margin-bottom: 5px
+	
+	.smscMain 
+		height: 100%
+	
+	.smscCheckbox > label 
+		color: TextColor
+	
+	#contentContainerTotal
+	#contentContainer
+	.agenda_grid_days 
+		width: 100% !important
+	
+	#infoFormWindow 
+		background-color: BGColor
+		color: TextColor
+		padding-left: 10px
+		padding-right: 10px
+	
+	#infoFormWindow_movableDiv > div.wborder.wbleft
+	div.wborder.wbright 
+		display: none
+	
+	#infoFormWindow_titlebar 
+		width: 100% !important
+		display: absolute !important
+	
+	#rightContainerBottom 
+		border: none
+	
+	.lessonFormTitleContainer 
+		color: TextColor !important
+	
+	.tabs 
+		background-image: none !important
+	
+	.tabs li
+	.tabs li.current 
+		color: TextColor
+		background: none
+		background-color: BG2Color
+		border-radius: 5px
+		border: 1px solid BorderColor
+	
+	.tabs li
+		&.current 
+			background-color: ACCColor
+		span 
+			background: none !important
+	
+	#infoContainerStudent 
+		border-radius: 5px
+		border: 1px solid BorderColor
+		background-color: BG3Color
+		-ms-overflow-style: none !important
+		scrollbar-width: none !important
+	
+	::-webkit-scrollbar 
+		display: none
+	
+	#infoContainerNoteContent 
+		color: TextColor
+		width: 100% !important
+		height: 100% !important
+		border: none
+		background-color: BG3Color
+	
+	#infoFormWindow_
+		&leftBorder 
+			display: none !important
+		&contentDiv 
+			border-radius: 15px
+			border: 1px solid BorderColor
+			background-color: BG2Color !important
+			width: 100% !important
+	
+	#infoContainerAssignments, .infoContainerBlock 
+		background-color: BG2Color !important
+	
+	#infoContainerAssignments 
+		border-radius: 8px
+		border: 1px solid BorderColor
+	
+	.infoContainerButton
+		background: BG2Color !important
+	
+	.gradient_window 
+		border-radius: 15px
+		border: 1px solid ACCColor
+	
+	.wborder 
+		background-image: none !important
+	
