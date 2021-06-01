@@ -193,7 +193,6 @@
 		color: TextColor
 	
 	.js-hero-image
-		background-image: url(https://vjloopsfarm.com/wp-content/uploads/2019/05/Red-Keter-sequence-patterns.-4k.-Abstract-multicolored-motion-graphics-background.-VJ-Loop-LIMEART_003.jpg) !important
 		background-image: url(ImageSource) !important
 		filter: blur(2px) brightness(70%) contrast(90%)
 
